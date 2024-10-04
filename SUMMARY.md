@@ -17,5 +17,7 @@
       * [Глава 1. Обзор сценариев на Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/README.md)
         * [Почему именно Python?](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/pochemu-imenno-python.md)
         * [Установка Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/ustanovka-python.md)
+        * [Начало работы с Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/nachalo-raboty-s-python.md)
+        * [Переменные Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/peremennye-python.md)
 * [GOLang](golang.md)
 * [Page 2](page-2.md)
