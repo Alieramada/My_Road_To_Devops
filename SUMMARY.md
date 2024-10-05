@@ -11,6 +11,8 @@
             * [Урок 1.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.2-osnovnye-prilozheniya-s-otkrytym-iskhodnym-kodom/urok-1.2..md)
           * [1.3 Программное обеспечение с открытым исходным кодом и лицензирование](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.3-programmnoe-obespechenie-s-otkrytym-iskhodnym-kodom-i-licenzirovanie/README.md)
             * [Урок 1.3.](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.3-programmnoe-obespechenie-s-otkrytym-iskhodnym-kodom-i-licenzirovanie/urok-1.3..md)
+          * [1.4 Навыки работы с ИКТ и в Linux](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.4-navyki-raboty-s-ikt-i-v-linux/README.md)
+            * [Урок 1.4.](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.4-navyki-raboty-s-ikt-i-v-linux/urok-1.4..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
