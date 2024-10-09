@@ -35,7 +35,7 @@ $ python
 
 Интерактивная консоль Python запускается с >>> . Эта консоль будет принимать команды Python, которые вы будете вводить после >>> . Смотрите следующий снимок экрана:
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Теперь мы увидим, как присваивать значения переменной, как в следующем примере:
 
