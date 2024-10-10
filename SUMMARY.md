@@ -2,7 +2,6 @@
 
 * [Linux](README.md)
   * [Книги по Linux](linux/knigi-po-linux/README.md)
-    * [Page 1](linux/knigi-po-linux/page-1.md)
     * [LPI](linux/knigi-po-linux/lpi/README.md)
       * [Основы Linux](linux/knigi-po-linux/lpi/osnovy-linux/README.md)
         * [Тема 1: Сообщество Linux и карьера в сфере Open Source](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/README.md)
@@ -23,7 +22,7 @@
             * [Урок 2.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.2-ispolzovanie-komandnoi-stroki-dlya-polucheniya-spravki/urok-2.1..md)
           * [2.3. Использование каталогов и списков файлов](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.3.-ispolzovanie-katalogov-i-spiskov-failov/README.md)
             * [Урок 2.3.1](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.3.-ispolzovanie-katalogov-i-spiskov-failov/urok-2.3.1.md)
-* [Page](page.md)
+            * [Урок 2.3.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.3.-ispolzovanie-katalogov-i-spiskov-failov/urok-2.3.2..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
@@ -34,4 +33,3 @@
         * [Переменные Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/peremennye-python.md)
         * [Парсинг аргументов командной строки](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/parsing-argumentov-komandnoi-stroki.md)
 * [GOLang](golang.md)
-* [Page 2](page-2.md)
