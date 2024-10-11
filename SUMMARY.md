@@ -23,6 +23,8 @@
           * [2.3. Использование каталогов и списков файлов](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.3.-ispolzovanie-katalogov-i-spiskov-failov/README.md)
             * [Урок 2.3.1](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.3.-ispolzovanie-katalogov-i-spiskov-failov/urok-2.3.1.md)
             * [Урок 2.3.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.3.-ispolzovanie-katalogov-i-spiskov-failov/urok-2.3.2..md)
+          * [2.4 Создание, перемещение и удаление файлов](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.4-sozdanie-peremeshenie-i-udalenie-failov/README.md)
+            * [Урок 2.4.](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.4-sozdanie-peremeshenie-i-udalenie-failov/urok-2.4..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
