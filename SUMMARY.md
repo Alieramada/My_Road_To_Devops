@@ -37,4 +37,6 @@
         * [Начало работы с Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/nachalo-raboty-s-python.md)
         * [Переменные Python](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/peremennye-python.md)
         * [Парсинг аргументов командной строки](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/parsing-argumentov-komandnoi-stroki.md)
+      * [Глава 2. Отладка и профилирование скриптов на Python.](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./README.md)
+        * [Отладка](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./otladka.md)
 * [GOLang](golang.md)
