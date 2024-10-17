@@ -250,6 +250,59 @@ set\_trace() - это функция Python, поэтому вы можете в
 
 Итак, вот три способа, с помощью которых вы можете запустить отладчик.
 
+## &#x20;Отладка сбоев в основной программе
+
+&#x20;В этом разделе мы познакомимся с модулем трассировки. Модуль трассировки помогает отслеживать выполнение программы. Таким образом, всякий раз, когда ваша программа на Python выходит из строя, мы можем понять, где она выходит из строя. Мы можем использовать модуль трассировки, импортировав его в ваш скрипт, а также из командной строки.
+
+Теперь мы создадим скрипт с именем trace\_example.py и запишем в скрипт следующее содержимое:
+
+```
+class Student:
+            def __init__(self, std):
+                        self.count = std
+ 
+            def go(self):
+                        for i in range(self.count):
+                                    print(i)
+                        return
+if __name__ == '__main__':
+            Student(5).go()
+```
+
+Результат будет выглядеть следующим образом:
+
+```
+student@ubuntu:~$ python3 -m trace --trace trace_example.py
+ --- modulename: trace_example, funcname: <module>
+trace_example.py(1): class Student:
+ --- modulename: trace_example, funcname: Student
+trace_example.py(1): class Student:
+trace_example.py(2):   def __init__(self, std):
+trace_example.py(5):   def go(self):
+trace_example.py(10): if __name__ == '__main__':
+trace_example.py(11):             Student(5).go()
+ --- modulename: trace_example, funcname: init
+trace_example.py(3):               self.count = std
+ --- modulename: trace_example, funcname: go
+trace_example.py(6):               for i in range(self.count):
+trace_example.py(7):                           print(i)
+0
+trace_example.py(6):               for i in range(self.count):
+trace_example.py(7):                           print(i)
+1
+trace_example.py(6):               for i in range(self.count):
+trace_example.py(7):                           print(i)
+2
+trace_example.py(6):               for i in range(self.count):
+trace_example.py(7):                           print(i)
+3
+trace_example.py(6):               for i in range(self.count):
+trace_example.py(7):                           print(i)
+4
+```
+
+Таким образом, используя trace -трассировку в командной строке, разработчик может отслеживать программу построчно. Таким образом, всякий раз, когда программа выходит из строя, разработчик будет знать, в каком месте произошел сбой.
+
 
 
 

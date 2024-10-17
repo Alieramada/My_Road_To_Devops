@@ -41,4 +41,5 @@
         * [Парсинг аргументов командной строки](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-1.-obzor-scenariev-na-python/parsing-argumentov-komandnoi-stroki.md)
       * [Глава 2. Отладка и профилирование скриптов на Python.](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./README.md)
         * [Отладка](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./otladka.md)
+        * [Программы профилирования и синхронизации](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./programmy-profilirovaniya-i-sinkhronizacii.md)
 * [GOLang](golang.md)
