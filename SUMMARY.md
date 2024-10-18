@@ -13,7 +13,6 @@
             * [Урок 1.3.](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.3-programmnoe-obespechenie-s-otkrytym-iskhodnym-kodom-i-licenzirovanie/urok-1.3..md)
           * [1.4 Навыки работы с ИКТ и в Linux](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.4-navyki-raboty-s-ikt-i-v-linux/README.md)
             * [Урок 1.4.](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/1.4-navyki-raboty-s-ikt-i-v-linux/urok-1.4..md)
-          * [Использование каталогов и листинг файлов](linux/knigi-po-linux/lpi/osnovy-linux/tema-1-soobshestvo-linux-i-karera-v-sfere-open-source/ispolzovanie-katalogov-i-listing-failov.md)
         * [Тема 2: Как найти свой путь в системе Linux](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/README.md)
           * [2.1 Основы командной строки](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.1-osnovy-komandnoi-stroki/README.md)
             * [Урок 2.1.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-2-kak-naiti-svoi-put-v-sisteme-linux/2.1-osnovy-komandnoi-stroki/urok-2.1.1..md)
