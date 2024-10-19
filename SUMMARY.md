@@ -44,4 +44,5 @@
       * [Глава 2. Отладка и профилирование скриптов на Python.](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./README.md)
         * [Отладка](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./otladka.md)
         * [Программы профилирования и синхронизации](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./programmy-profilirovaniya-i-sinkhronizacii.md)
+      * [Модульное тестирование - Введение в систему модульного тестирования](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/modulnoe-testirovanie-vvedenie-v-sistemu-modulnogo-testirovaniya.md)
 * [GOLang](golang.md)
