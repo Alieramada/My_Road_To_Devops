@@ -44,5 +44,6 @@
       * [Глава 2. Отладка и профилирование скриптов на Python.](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./README.md)
         * [Отладка](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./otladka.md)
         * [Программы профилирования и синхронизации](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./programmy-profilirovaniya-i-sinkhronizacii.md)
-      * [Модульное тестирование - Введение в систему модульного тестирования](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/modulnoe-testirovanie-vvedenie-v-sistemu-modulnogo-testirovaniya.md)
+      * [Глава 3. Модульное тестирование - Введение в систему модульного тестирования](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-3.-modulnoe-testirovanie-vvedenie-v-sistemu-modulnogo-testirovaniya.md)
+      * [Глава 4. Автоматизация  деятельности системного администратора](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-4.-avtomatizaciya-deyatelnosti-sistemnogo-administratora.md)
 * [GOLang](golang.md)
