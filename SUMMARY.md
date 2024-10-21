@@ -32,7 +32,7 @@
             * [Урок 3.2.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-3-vozmozhnosti-komandnoi-stroki/3.2-poisk-i-izvlechenie-dannykh-iz-failov/urok-3.2.2..md)
           * [3.3 Преобразование команд в скрипт](linux/knigi-po-linux/lpi/osnovy-linux/tema-3-vozmozhnosti-komandnoi-stroki/3.3-preobrazovanie-komand-v-skript/README.md)
             * [Урок 3.3.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-3-vozmozhnosti-komandnoi-stroki/3.3-preobrazovanie-komand-v-skript/urok-3.3.1..md)
-            * [Page 1](linux/knigi-po-linux/lpi/osnovy-linux/tema-3-vozmozhnosti-komandnoi-stroki/3.3-preobrazovanie-komand-v-skript/page-1.md)
+            * [Урок 3.3.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-3-vozmozhnosti-komandnoi-stroki/3.3-preobrazovanie-komand-v-skript/urok-3.3.2..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
