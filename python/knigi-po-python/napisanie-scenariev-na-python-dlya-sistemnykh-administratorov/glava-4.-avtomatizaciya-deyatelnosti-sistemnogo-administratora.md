@@ -237,3 +237,111 @@ capture_output.py
 ```
 
 В предыдущем скрипте мы импортировали модуль subprocess из Python, который помогает получать выходные данные. Модуль subprocess используется для создания новых процессов. Он также помогает подключать каналы ввода/вывода и получать код возврата. subprocess.run() выполнит команду, переданную в качестве аргумента. Возвращаемый код будет означать статус завершения вашего дочернего процесса. Если в выходных данных вы получите код возврата в виде 0, это означает, что он был успешно выполнен.
+
+## **Запрос паролей во время выполнения и проверка**
+
+В этом разделе мы познакомимся с модулем getpass для обработки паролей во время выполнения. Модуль getpass() в Python предлагает пользователю ввести пароль без повторения. Модуль getpass используется для обработки запроса пароля всякий раз, когда программы взаимодействуют с пользователем через терминал.
+
+Мы рассмотрим несколько примеров использования модуля getpass:
+
+1. Создайте скрипт с именем no\_prompt.py и напишите в нем следующий код:
+
+
+
+<pre class="language-python"><code class="lang-python"><strong>import getpass
+</strong><strong>try:
+</strong><strong>            p = getpass.getpass()
+</strong><strong>except Exception as error:
+</strong><strong>            print('ERROR', error)
+</strong><strong>else:
+</strong><strong>            print('Password entered:', p)
+</strong></code></pre>
+
+В этом скрипте запрос для пользователя не предусмотрен. По умолчанию установлено требование ввести пароль.
+
+Запустите скрипт следующим образом:
+
+```bash
+$ python3 no_prompt.py
+Output :
+Password:
+Password entered: abcd
+```
+
+2. Мы предусмотрим запрос на ввод пароля. Для этого создайте скрипт под названием with\_prompt.py и напишите в нём следующий код:
+
+```python
+import getpass
+try:
+            p = getpass.getpass("Enter your password: ")
+except Exception as error:
+            print('ERROR', error)
+else:
+            print('Password entered:', p)
+```
+
+Теперь мы написали скрипт, который выдает запрос на ввод пароля. Запустите программу следующим образом:
+
+<pre class="language-sh"><code class="lang-sh"><strong>$ python3 with_prompt.py
+</strong><strong>Output:
+</strong><strong>Enter your password:
+</strong><strong>Password entered: abcd
+</strong><strong>
+</strong></code></pre>
+
+Мы предоставили пользователю запрос на ввод пароля.
+
+Теперь мы напишем скрипт, в котором, если мы введем неправильный пароль, он просто напечатает простое сообщение, но больше не будет предлагать ввести правильный пароль.
+
+3. Напишите скрипт с именем getpass\_example.py и напишите в нем следующий код:
+
+```python
+import getpass
+passwd = getpass.getpass(prompt='Enter your password: ')
+if passwd.lower() == '#pythonworld':
+            print('Welcome!!')
+else:
+            print('The password entered is incorrect!!')
+```
+
+Запустите программу следующим образом (здесь мы вводим правильный пароль, то есть #pythonworld).:
+
+<pre class="language-sh"><code class="lang-sh"><strong>$ python3 getpass_example.py
+</strong><strong>Output:
+</strong><strong>Enter your password:
+</strong><strong>Welcome!!
+</strong></code></pre>
+
+Теперь мы введем неправильный пароль и проверим, какое сообщение мы получим:
+
+<pre class="language-sh"><code class="lang-sh"><strong>$ python3 getpass_example.py
+</strong><strong>Output:
+</strong><strong>Enter your password:
+</strong><strong>The password entered is incorrect!!
+</strong></code></pre>
+
+Здесь мы написали скрипт, который никогда больше не попросит ввести пароль, если мы введем неправильный пароль.
+
+Теперь мы напишем скрипт, который снова попросит ввести правильный пароль, когда мы введем неправильный пароль. Чтобы получить логин пользователя, используется функция getuser(). Функция getuser() вернет пользователя, вошедшего в систему. Создайте скрипт с именем password\_prompt\_again.py и напишите в нем следующий код:
+
+<pre class="language-python"><code class="lang-python"><strong>import getpass
+</strong><strong>user_name = getpass.getuser()
+</strong><strong>print ("User Name : %s" % user_name)
+</strong><strong>while True:
+</strong><strong>            passwd = getpass.getpass("Enter your Password : ")
+</strong><strong>            if passwd == '#pythonworld':
+</strong><strong>                        print ("Welcome!!!")
+</strong><strong>                        break
+</strong><strong>            else:
+</strong><strong>                        print ("The password you entered is incorrect.")
+</strong></code></pre>
+
+Запустите программу, и вы получите следующий результат:
+
+<pre class="language-sh"><code class="lang-sh"><strong>student@ubuntu:~$ python3 password_prompt_again.py
+</strong><strong>User Name : student
+</strong><strong>Enter your Password :
+</strong><strong>The password you entered is incorrect.
+</strong><strong>Enter your Password :
+</strong><strong>Welcome!!!
+</strong></code></pre>
