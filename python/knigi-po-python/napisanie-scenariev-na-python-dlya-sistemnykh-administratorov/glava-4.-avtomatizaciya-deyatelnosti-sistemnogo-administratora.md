@@ -345,3 +345,61 @@ else:
 </strong><strong>Enter your Password :
 </strong><strong>Welcome!!!
 </strong></code></pre>
+
+## Чтение конфигурационных файлов
+
+В этом разделе мы познакомимся с модулем configparser в Python. Используя модуль configparser, вы можете управлять редактируемыми пользователем файлами конфигурации приложения.&#x20;
+
+Обычное использование этих конфигурационных файлов заключается в том, что пользователи или системные администраторы могут редактировать файлы с помощью простого текстового редактора, чтобы установить значения приложения по умолчанию, а затем приложение будет считывать, анализировать их и действовать в соответствии с записанным в них содержимым.&#x20;
+
+Для чтения конфигурационного файла в configparser есть метод read(). Теперь мы напишем простой скрипт с именем read\_config\_file.py. Перед этим создадим ini-файл с именем read\_simple.ini и запишем в него следующее содержимое: read\_simple.ini
+
+```
+[bug_tracker]
+url =https://timesofindia.indiatimes.com/
+```
+
+Создайте файл read\_config\_file.py и введите в него следующее содержимое:
+
+```python
+from configparser import ConfigParser
+p = ConfigParser()
+p.read('read_simple.ini')
+print(p.get('bug_tracker', 'url'))
+```
+
+Запустите read\_config\_file.py, и вы получите следующий результат:
+
+```bash
+$ python3 read_config_file.py
+
+Output:
+https://timesofindia.indiatimes.com/
+```
+
+Метод read() принимает более одного имени файла. Всякий раз, когда проверяется каждое имя файла, и если этот файл существует, он будет открыт и прочитан. Теперь мы напишем скрипт для чтения нескольких имен файлов. Создайте скрипт с именем read\_many\_config\_file.py и напишите в нем следующий код:
+
+```python
+from configparser import ConfigParser
+import glob
+
+p = ConfigParser()
+files = ['hello.ini', 'bye.ini', 'read_simple.ini', 'welcome.ini']
+files_found = p.read(files)
+files_missing = set(files) - set(files_found)
+print('Files found: ', sorted(files_found))
+print('Files missing: ', sorted(files_missing))
+```
+
+Запустите предыдущий скрипт, и вы получите следующий результат:
+
+```bash
+$ python3 read_many_config_file.py
+
+Output
+Files found: ['read_simple.ini']
+Files missing: ['bye.ini', 'hello.ini', 'welcome.ini']
+```
+
+В предыдущем примере мы использовали модуль configparser на Python, который помогает управлять файлами конфигурации. Сначала мы создали список файлов с именами. Функция read() будет считывать файлы конфигурации. В примере мы создали переменную files\_found, в которой будут храниться имена файлов конфигурации, присутствующих в вашем каталоге. Затем мы создали другую переменную files\_missing, которая будет возвращать имена файлов, отсутствующих в вашем каталоге. И, наконец, мы печатаем имена файлов, которые присутствуют и отсутствующие.
+
