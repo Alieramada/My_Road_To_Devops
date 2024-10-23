@@ -403,3 +403,165 @@ Files missing: ['bye.ini', 'hello.ini', 'welcome.ini']
 
 В предыдущем примере мы использовали модуль configparser на Python, который помогает управлять файлами конфигурации. Сначала мы создали список файлов с именами. Функция read() будет считывать файлы конфигурации. В примере мы создали переменную files\_found, в которой будут храниться имена файлов конфигурации, присутствующих в вашем каталоге. Затем мы создали другую переменную files\_missing, которая будет возвращать имена файлов, отсутствующих в вашем каталоге. И, наконец, мы печатаем имена файлов, которые присутствуют и отсутствующие.
 
+## Добавление кода ведения журнала и предупреждений в скрипты
+
+В этом разделе мы познакомимся с модулями ведения журнала и предупреждений в Python. Модуль ведения журнала будет отслеживать события, происходящие в программе. Модуль предупреждений уведомляет программистов об изменениях, внесенных в язык, а также в библиотеки.
+
+Теперь мы рассмотрим простой пример ведения журнала. Мы напишем скрипт с именем logging\_example.py и введем в него следующий код:
+
+```python
+import logging
+LOG_FILENAME = 'log.txt'
+logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG,)
+logging.debug('This message should go to the log file')
+with open(LOG_FILENAME, 'rt') as f:
+prg = f.read()
+print('FILE:')
+print(prg)
+```
+
+Запустите программу следующим образом:
+
+```sh
+$ python3 logging_example.py
+
+Output:
+FILE:
+DEBUG:root:This message should go to the log file
+```
+
+Проверьте hello.py и вы увидите сообщение об отладке, напечатанное в этом скрипте:
+
+```bash
+$ cat log.txt
+Output:
+DEBUG:root:This message should go to the log file
+```
+
+Теперь мы напишем скрипт под названием logging\_warnings\_codes.py и введем в него следующий код:
+
+```sh
+import logging
+import warnings
+logging.basicConfig(level=logging.INFO,)
+warnings.warn('This warning is not sent to the logs')
+logging.captureWarnings(True)
+warnings.warn('This warning is sent to the logs')
+```
+
+Запустите скрипт следующим образом:
+
+```sh
+$ python3 logging_warnings_codes.py
+
+Output:
+logging_warnings_codes.py:6: UserWarning: This warning is not sent to the logs
+warnings.warn('This warning is not sent to the logs')
+WARNING:py.warnings:logging_warnings_codes.py:10: UserWarning: This warning is sent to the logs
+warnings.warn('This warning is sent to the logs')
+```
+
+## Генерирование предупреждений
+
+Для генерации предупреждений используется функция warn(). Сейчас мы рассмотрим простой пример генерации предупреждений. Напишите скрипт с именем generate\_warnings.py и напишите в нем следующий код:
+
+```python
+import warnings
+warnings.simplefilter('error', UserWarning)
+print('Before')
+warnings.warn('Write your warning message here')
+print('After')
+```
+
+Запустите скрипт следующим образом:
+
+```bash
+$ python3 generate_warnings.py
+
+Output:
+Before:
+Traceback (most recent call last):
+File "generate_warnings.py", line 6, in <module>
+warnings.warn('Write your warning message here')
+UserWarning: Write your warning message here
+```
+
+В предыдущем скрипте мы передавали предупреждающее сообщение через функцию warn(). Мы использовали простой фильтр, чтобы ваше предупреждение было расценено как ошибка, и программист соответствующим образом устранил эту ошибку.
+
+## Установка ограничений на использование процессора и памяти
+
+В этом разделе мы узнаем о том, как мы можем ограничить использование процессора и памяти. Сначала мы напишем скрипт для ограничения использования процессора. Создайте скрипт с именем put\_cpu\_limit.py и напишите в нем следующий код:
+
+```python
+import resource
+import sys
+import signal
+import time
+def time_expired(n, stack):
+print('EXPIRED :', time.ctime())
+raise SystemExit('(time ran out)')
+signal.signal(signal.SIGXCPU, time_expired)
+# Adjust the CPU time limit
+soft, hard = resource.getrlimit(resource.RLIMIT_CPU)
+print('Soft limit starts as :', soft)
+resource.setrlimit(resource.RLIMIT_CPU, (10, hard))
+soft, hard = resource.getrlimit(resource.RLIMIT_CPU)
+print('Soft limit changed to :', soft)
+print()
+# Consume some CPU time in a pointless exercise
+print('Starting:', time.ctime())
+for i in range(200000):
+for i in range(200000):
+v = i * i
+# We should never make it this far
+print('Exiting :', time.ctime())
+```
+
+Запустите предыдущий скрипт следующим образом:
+
+```sh
+$ python3 put_cpu_limit.py
+
+Output:
+Soft limit starts as : -1
+Soft limit changed to : 10
+Starting: Thu Sep 6 16:13:20 2018
+EXPIRED : Thu Sep 6 16:13:31 2018
+(time ran out)
+```
+
+В предыдущем скрипте мы использовали функцию setrlimit() для ограничения загрузки процессора. Итак, в нашем скрипте мы установили ограничение на 10 секунд.
+
+## Запуск веб-браузера
+
+В этом разделе мы познакомимся с модулем webbrowser на Python. В этом модуле есть функции для открытия URL-адресов в браузерных приложениях. Мы рассмотрим простой пример. Создайте скрипт с именем open\_web.py и напишите в нем следующий код:
+
+```python
+import webbrowser
+webbrowser.open('https://timesofindia.indiatimes.com/world')
+```
+
+```sh
+$ python3 open_web.py
+
+Output:
+Url mentioned in open() will be opened in your browser.
+webbrowser – Command line interface
+```
+
+Вы также можете использовать модуль webbrowser на Python через командную строку и можете использовать его полностью. Чтобы использовать веб-браузер через командную строку, выполните следующую команду:
+
+```sh
+$ python3 -m webbrowser -n https://www.google.com/
+```
+
+https://www.google.com / будет открыт в окне браузера. Вы можете использовать следующие два варианта:
+
+• -n: Открыть новое окно&#x20;
+
+• -t: Открыть новую вкладку
+
+
+
+
+
