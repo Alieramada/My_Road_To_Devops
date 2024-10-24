@@ -38,6 +38,8 @@
             * [Урок 4.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.1-vybor-operacionnoi-sistemy/urok-4.1..md)
           * [4.2 Понимание компьютерного оборудования](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.2-ponimanie-kompyuternogo-oborudovaniya/README.md)
             * [Урок 4.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.2-ponimanie-kompyuternogo-oborudovaniya/urok-4.2..md)
+          * [4.3 Где хранятся данные](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.3-gde-khranyatsya-dannye/README.md)
+            * [Урок 4.3.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.3-gde-khranyatsya-dannye/urok-4.3.1..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
