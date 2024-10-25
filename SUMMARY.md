@@ -55,4 +55,5 @@
         * [Программы профилирования и синхронизации](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-2.-otladka-i-profilirovanie-skriptov-na-python./programmy-profilirovaniya-i-sinkhronizacii.md)
       * [Глава 3. Модульное тестирование - Введение в систему модульного тестирования](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-3.-modulnoe-testirovanie-vvedenie-v-sistemu-modulnogo-testirovaniya.md)
       * [Глава 4. Автоматизация  деятельности системного администратора](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-4.-avtomatizaciya-deyatelnosti-sistemnogo-administratora.md)
+      * [Глава 5. Обработка файлов, каталогов и данных](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-5.-obrabotka-failov-katalogov-i-dannykh.md)
 * [GOLang](golang.md)
