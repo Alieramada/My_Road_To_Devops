@@ -387,8 +387,8 @@ p = ConfigParser()
 files = ['hello.ini', 'bye.ini', 'read_simple.ini', 'welcome.ini']
 files_found = p.read(files)
 files_missing = set(files) - set(files_found)
-print('Files found: ', sorted(files_found))
-print('Files missing: ', sorted(files_missing))
+print('Files found:  ', sorted(files_found))
+print('Files missing:  ', sorted(files_missing))
 ```
 
 Запустите предыдущий скрипт, и вы получите следующий результат:
@@ -397,8 +397,8 @@ print('Files missing: ', sorted(files_missing))
 $ python3 read_many_config_file.py
 
 Output
-Files found: ['read_simple.ini']
-Files missing: ['bye.ini', 'hello.ini', 'welcome.ini']
+Files found:   ['read_simple.ini']
+Files missing:   ['bye.ini', 'hello.ini', 'welcome.ini']
 ```
 
 В предыдущем примере мы использовали модуль configparser на Python, который помогает управлять файлами конфигурации. Сначала мы создали список файлов с именами. Функция read() будет считывать файлы конфигурации. В примере мы создали переменную files\_found, в которой будут храниться имена файлов конфигурации, присутствующих в вашем каталоге. Затем мы создали другую переменную files\_missing, которая будет возвращать имена файлов, отсутствующих в вашем каталоге. И, наконец, мы печатаем имена файлов, которые присутствуют и отсутствующие.
@@ -415,7 +415,7 @@ LOG_FILENAME = 'log.txt'
 logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG,)
 logging.debug('This message should go to the log file')
 with open(LOG_FILENAME, 'rt') as f:
-prg = f.read()
+            prg = f.read()
 print('FILE:')
 print(prg)
 ```
@@ -428,12 +428,14 @@ $ python3 logging_example.py
 Output:
 FILE:
 DEBUG:root:This message should go to the log file
+
 ```
 
 Проверьте hello.py и вы увидите сообщение об отладке, напечатанное в этом скрипте:
 
 ```bash
 $ cat log.txt
+
 Output:
 DEBUG:root:This message should go to the log file
 ```
@@ -455,10 +457,10 @@ warnings.warn('This warning is sent to the logs')
 $ python3 logging_warnings_codes.py
 
 Output:
-logging_warnings_codes.py:6: UserWarning: This warning is not sent to the logs
-warnings.warn('This warning is not sent to the logs')
+logging_warnings_codes.py:6: UserWarning: This warning is not sent to the logs)
+   warnings.warn('This warning is not sent to the logs')
 WARNING:py.warnings:logging_warnings_codes.py:10: UserWarning: This warning is sent to the logs
-warnings.warn('This warning is sent to the logs')
+    warnings.warn('This warning is sent to the logs')
 ```
 
 ## Генерирование предупреждений
@@ -481,8 +483,8 @@ $ python3 generate_warnings.py
 Output:
 Before:
 Traceback (most recent call last):
-File "generate_warnings.py", line 6, in <module>
-warnings.warn('Write your warning message here')
+  File "generate_warnings.py", line 6, in <module>
+    warnings.warn('Write your warning message here')
 UserWarning: Write your warning message here
 ```
 
@@ -498,12 +500,12 @@ import sys
 import signal
 import time
 def time_expired(n, stack):
-print('EXPIRED :', time.ctime())
-raise SystemExit('(time ran out)')
+            print('EXPIRED :', time.ctime())
+            raise SystemExit('(time ran out)')
 signal.signal(signal.SIGXCPU, time_expired)
 # Adjust the CPU time limit
 soft, hard = resource.getrlimit(resource.RLIMIT_CPU)
-print('Soft limit starts as :', soft)
+print('Soft limit starts as  :', soft)
 resource.setrlimit(resource.RLIMIT_CPU, (10, hard))
 soft, hard = resource.getrlimit(resource.RLIMIT_CPU)
 print('Soft limit changed to :', soft)
@@ -511,8 +513,8 @@ print()
 # Consume some CPU time in a pointless exercise
 print('Starting:', time.ctime())
 for i in range(200000):
-for i in range(200000):
-v = i * i
+            for i in range(200000):
+                        v = i * i
 # We should never make it this far
 print('Exiting :', time.ctime())
 ```
@@ -521,12 +523,12 @@ print('Exiting :', time.ctime())
 
 ```sh
 $ python3 put_cpu_limit.py
-
+ 
 Output:
-Soft limit starts as : -1
+Soft limit starts as  : -1
 Soft limit changed to : 10
-Starting: Thu Sep 6 16:13:20 2018
-EXPIRED : Thu Sep 6 16:13:31 2018
+Starting: Thu Sep  6 16:13:20 2018
+EXPIRED : Thu Sep  6 16:13:31 2018
 (time ran out)
 ```
 
@@ -577,10 +579,10 @@ os.makedirs(directory_name)
 file_name = os.path.join(directory_name, 'sample_example.txt')
 print('Creating', file_name)
 with open(file_name, 'wt') as f:
-f.write('sample example file')
+            f.write('sample example file')
 print('Cleaning up')
 os.unlink(file_name)
-os.rmdir(directory_name) # Will delete the directory
+os.rmdir(directory_name)       # Will delete the derictory
 ```
 
 Запустите скрипт:
@@ -605,7 +607,7 @@ Cleaning up
 ```python
 import os
 import sys
-print(sorted(os.listdir(sys.argv[1])))
+print(sorted(os.listdir(sys.argv[1]))
 ```
 
 Запустите скрипт:
@@ -628,28 +630,28 @@ import shutil
 import time
 from sh import rsync
 def check_dir(os_dir):
-if not os.path.exists(os_dir):
-print (os_dir, "does not exist.")
-exit(1)
+            if not os.path.exists(os_dir):
+                        print (os_dir, "does not exist.")
+                        exit(1)
 def ask_for_confirm():
-ans = input("Do you want to Continue? yes/no\n")
-global con_exit
-if ans == 'yes':
-con_exit = 0
-return con_exit
-elif ans == "no":
-con_exit = 1
-return con_exit
-else:1
-print ("Answer with yes or no.")
-ask_for_confirm()
+            ans = input("Do you want to Continue? yes/no\n")
+            global con_exit
+            if ans == 'yes':
+                        con_exit = 0
+                        return con_exit
+            elif ans == "no":
+                        con_exit = 1
+                        return con_exit
+            else:1
+                        print ("Answer with yes or no.")
+                        ask_for_confirm()
 def delete_files(ending):
-for r, d, f in os.walk(backup_dir):
-for files in f:
-if files.endswith("." + ending):
-os.remove(os.path.join(r, files))
+            for r, d, f in os.walk(backup_dir):
+                        for files in f:
+                                    if files.endswith("." + ending):
+                                                os.remove(os.path.join(r, files))
 
-backup_dir = input("Enter directory to backup\n") # Enter directory name
+backup_dir = input("Enter directory to backup\n")   # Enter directory name
 check_dir(backup_dir)
 print (backup_dir, "saved.")
 time.sleep(3)
@@ -658,15 +660,15 @@ check_dir(backup_to_dir)
 print ("Doing the backup now!")
 ask_for_confirm()
 if con_exit == 1:
-print ("Aborting the backup process!")
-exit(1)
+            print ("Aborting the backup process!")
+            exit(1)
 rsync("-auhv", "--delete", "--exclude=lost+found", "--exclude=/sys", "--exclude=/tmp", "--exclude=/proc",
 "--exclude=/mnt", "--exclude=/dev", "--exclude=/backup", backup_dir, backup_to_dir)
 ```
 
 Запустите скрипт:
 
-```
+```sh
 student@ubuntu:~/work$ python3 take_backup.py
 
 Output :
@@ -704,7 +706,7 @@ yes
 
 Для использования модуля `readline` в Python, вам нужно сначала импортировать его в свой код. Это можно сделать с помощью команды:
 
-```
+```python
 import readline
 ```
 
@@ -715,7 +717,7 @@ import readline
 
 Пример:
 
-```
+```python
 import readline
 
 name = input("Введите ваше имя: ")
@@ -729,7 +731,7 @@ print("Здравствуйте,", name + "!")
 
 Пример:
 
-```
+```python
 import readline
 
 # Устанавливаем размер истории команд
@@ -821,7 +823,7 @@ print("Отредактированная команда:", edited_command)
 
 Пример кода для чтения и изменения значений в ini-файле:
 
-```sh
+```python
 import configparser
 
 # Открываем файл

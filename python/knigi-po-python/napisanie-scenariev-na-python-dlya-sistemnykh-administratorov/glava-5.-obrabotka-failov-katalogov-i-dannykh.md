@@ -32,46 +32,167 @@
 
 ```python
 $ python3
-Python 3.6.5 (default, Apr 1 2018, 05:46:30) 
+Python 3.6.5 (default, Apr  1 2018, 05:46:30) 
 [GCC 7.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>>import os
->>>os.getcwd()
+>>> import os
+>>> os.getcwd()
 '/home/student'
->>
+>> 
 ```
 
 ## Изменение каталога
 
 Используя модуль os, мы можем изменить текущий рабочий каталог. Для этого в модуле os есть функция chdir(), например:
 
-```python
->>>os.chdir('/home/student/work')
->>>print(os.getcwd())
+```bash
+>>> os.chdir('/home/student/work')
+>>> print(os.getcwd())
 /home/student/work
->>>
+>>> 
 ```
 
 ## Список файлов и каталогов
 
 Вывод содержимого каталога на Python прост. Мы собираемся использовать модуль операционной системы, в котором есть функция с именем listdir(), которая будет возвращать имена файлов и каталогов из вашего рабочего каталога:
 
-```python
->>>os.listdir()
+```bash
+>>> os.listdir()
 ['Public', 'python_learning', '.ICEauthority', '.python_history', 'work', '.bashrc', 'Pictures', '.gnupg', '.cache', '.bash_logout', '.sudo_as_admin_successful', '.bash_history', '.config', '.viminfo', 'Desktop', 'Documents', 'examples.desktop', 'Videos', '.ssh', 'Templates', '.profile', 'dir', '.pam_environment', 'Downloads', '.local', '.dbus', 'Music', '.mozilla']
->>>
+>>> 
 ```
 
 ## Переименование каталога
 
 В модуле os на Python есть функция rename(), которая помогает изменить название каталога:
 
-```python
->>>os.rename('work', 'work1')
->>>os.listdir()
+```bash
+>>> os.rename('work', 'work1')
+>>> os.listdir()
 ['Public', 'work1', 'python_learning', '.ICEauthority', '.python_history', '.bashrc', 'Pictures', '.gnupg', '.cache', '.bash_logout', '.sudo_as_admin_successful', '.bash_history', '.config', '.viminfo', 'Desktop', 'Documents', 'examples.desktop', 'Videos', '.ssh', 'Templates', '.profile', 'dir', '.pam_environment', 'Downloads', '.local', '.dbus', 'Music', '.mozilla']
+>> 
 ```
 
 ## Копирование, перемещение, переименование и удаление данных
 
 Мы познакомимся с четырьмя основными операциями, которые системные администраторы выполняют с данными: копированием, перемещением, переименованием и удалением. В Python есть встроенный модуль под названием shutil, который может выполнять эти задачи. Используя модуль shutil, мы также можем выполнять высокоуровневые операции с данными. Чтобы использовать модуль shutil в вашей программе, просто напишите инструкцию import shutil. Модуль shutil предлагает несколько функций, которые поддерживают операции копирования и удаления файлов. Давайте рассмотрим эти операции одну за другой.
+
+## Копирование данных
+
+В этом разделе мы увидим, как мы можем копировать файлы с помощью модуля shutil. Для этого сначала мы создадим файл hello.py и введем в него некоторый текст.
+
+```python
+hello.py:
+
+print ("")
+print ("Hello World\n")
+print ("Hello Python\n")
+```
+
+Теперь мы напишем код для копирования в скрипт shutil\_copy\_example.py. Запишем в него следующее содержимое:
+
+```python
+import shutil
+import os
+shutil.copy('hello.py', 'welcome.py')
+print("Copy Successful")
+```
+
+Запустите скрипт следующим образом:
+
+```sh
+$ python3 shutil_copy_example.py
+
+Output:
+Copy Successful
+```
+
+Проверьте наличие скрипта welcome.py, и вы увидите, что содержимое hello.py успешно скопировано в welcome.py.
+
+## Перемещение данных
+
+Мы увидим, как мы можем переместить данные. Для этой цели мы будем использовать shutil.move(). shutil.move(источник, пункт назначения) переместит файл из источника в пункт назначения. Теперь мы создадим shutil\_move\_example.py скрипт и запишем в него следующее содержимое:
+
+```python
+import shutil
+shutil.move('/home/student/sample.txt', '/home/student/Desktop/.')
+```
+
+Запустите скрипт следующим образом:
+
+```sh
+$ python3 shutil_move_example.py
+```
+
+В этом скрипте нам нужно переместить файл sample.txt, который находится в каталоге /home/student. /home/student - это наша исходная папка, а /home/student/Desktop - наша целевая папка. Итак, после запуска скрипта sample.txt будет перемещен из каталога /home/student в каталог /home/student/Desktop.
+
+## Переименование данных
+
+В предыдущем разделе мы узнали, как можно использовать shutil.move() для перемещения файлов из источника в место назначения. С помощью shutil.move() файлы можно переименовывать. Создайте скрипт shutil\_rename\_example.py и запишите в него следующее содержимое:
+
+```python
+import shutil
+shutil.move('hello.py', 'hello_renamed.py')
+```
+
+Запустите скрипт следующим образом:
+
+```sh
+$ python3 shutil_rename_example.py
+```
+
+Теперь убедитесь, что ваше имя файла будет переименовано hello\_renamed.py.
+
+## Удаление данных
+
+Мы узнаем, как удалять файлы и папки с помощью модуля os на Python. Метод remove() модуля os удалит файл. Если вы попытаетесь удалить каталог с помощью этого метода, это выдаст ошибку OSError. Чтобы удалить каталоги, используйте rmdir().
+
+Теперь создайте скрипт os\_remove\_file\_directory.py и запишите в него следующее содержимое:
+
+```python
+import os
+os.remove('sample.txt')
+print("File removed successfully")
+os.rmdir('work1')
+print("Directory removed successfully")
+```
+
+Запустите скрипт следующим образом:
+
+```sh
+$ python3 os_remove_file_directory.py
+
+Output:
+File removed successfully
+Directory removed successfully
+```
+
+## Работа с путями
+
+Теперь мы познакомимся с методом os.path(). Он используется для манипулирования путями. В этом разделе мы рассмотрим некоторые функции, которые модуль os предлагает для путей.
+
+Запустите консоль python3:
+
+```sh
+student@ubuntu:~$ python3
+Python 3.6.6 (default, Sep 12 2018, 18:26:19)
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>
+```
+
+os.path.abspath(путь): возвращает абсолютный путь для заданного пути.
+
+```bash
+>>> import os
+>>> os.path.abspath('sample.txt')
+'/home/student/work/sample.txt'
+```
+
+os.path.dirname(путь): используется для получения пути к родительскому каталогу по указанному пути до файла или каталога.
+
+```bash
+>>> os.path.dirname('/home/student/work/sample.txt')
+'/home/student/work'
+```
+
