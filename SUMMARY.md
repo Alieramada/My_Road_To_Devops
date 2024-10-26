@@ -42,7 +42,7 @@
             * [Урок 4.3.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.3-gde-khranyatsya-dannye/urok-4.3.1..md)
             * [Урок 4.3.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.3-gde-khranyatsya-dannye/urok-4.3.2..md)
           * [4.4 Ваш компьютер в сети](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.4-vash-kompyuter-v-seti/README.md)
-            * [Page 1](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.4-vash-kompyuter-v-seti/page-1.md)
+            * [Урок 4.4.](linux/knigi-po-linux/lpi/osnovy-linux/tema-4-operacionnaya-sistema-linux/4.4-vash-kompyuter-v-seti/urok-4.4..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
