@@ -664,3 +664,11 @@ print("Нечетные числа в диапазоне от", start, "до", e
 
 Ответ б) Он представляет собой список строк, содержащих аргументы командной строки, переданные скрипту при его запуске. Первый элемент (`sys.argv[0]`) — это имя самого скрипта, а остальные элементы — это аргументы, переданные скрипту.
 
+## Ркомендовано к прочтению
+
+Документация по pathlib: [https://docs.python.org/3/library/pathlib.html](https://docs.python.org/3/library/pathlib.html)&#x20;
+
+документация по pandas: [https://pandas.pydata.org/pandas-docs/stable/](https://pandas.pydata.org/pandas-docs/stable/)
+
+документация по модулю операционной системы: [https://docs.python.org/3/library/os.html](https://docs.python.org/3/library/os.html)
+
