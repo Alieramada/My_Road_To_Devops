@@ -48,6 +48,8 @@
             * [Урок 5.1.](linux/knigi-po-linux/lpi/osnovy-linux/tema-5-bezopasnost-i-prava-dostupa-k-failam/5.1-bazovaya-bezopasnost-i-identifikaciya-tipov-polzovatelei/urok-5.1..md)
           * [5.2 Создание пользователей и групп](linux/knigi-po-linux/lpi/osnovy-linux/tema-5-bezopasnost-i-prava-dostupa-k-failam/5.2-sozdanie-polzovatelei-i-grupp/README.md)
             * [Урок 5.2.](linux/knigi-po-linux/lpi/osnovy-linux/tema-5-bezopasnost-i-prava-dostupa-k-failam/5.2-sozdanie-polzovatelei-i-grupp/urok-5.2..md)
+          * [5.3 Управление разрешениями для файлов и правами собственности](linux/knigi-po-linux/lpi/osnovy-linux/tema-5-bezopasnost-i-prava-dostupa-k-failam/5.3-upravlenie-razresheniyami-dlya-failov-i-pravami-sobstvennosti/README.md)
+            * [Урок 5.3.](linux/knigi-po-linux/lpi/osnovy-linux/tema-5-bezopasnost-i-prava-dostupa-k-failam/5.3-upravlenie-razresheniyami-dlya-failov-i-pravami-sobstvennosti/urok-5.3..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
