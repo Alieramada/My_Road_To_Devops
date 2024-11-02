@@ -74,4 +74,5 @@
       * [Глава 4. Автоматизация  деятельности системного администратора](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-4.-avtomatizaciya-deyatelnosti-sistemnogo-administratora.md)
       * [Глава 5. Обработка файлов, каталогов и данных](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-5.-obrabotka-failov-katalogov-i-dannykh.md)
       * [Глава 6. Архивирование, шифрование и дешифрование файлов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-6.-arkhivirovanie-shifrovanie-i-deshifrovanie-failov.md)
+      * [Глава 7. Обработка текста и регулярные выражения](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-7.-obrabotka-teksta-i-regulyarnye-vyrazheniya.md)
 * [GOLang](golang.md)
