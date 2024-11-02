@@ -458,3 +458,13 @@ Unpickling в Python — обратный процесс, который вос�
 7. **Статические методы** — методы, определённые внутри класса, но не привязанные к конкретному экземпляру класса. Статические методы вызываются через класс, а не через экземпляр класса.
 8. **Методы класса** — похожи на статические методы, но они могут получить доступ к состоянию класса через self. Методы класса вызываются через класс.
 9. **Конструкторы** — специальная функция, которая вызывается при создании нового экземпляра класса. Конструкторы обычно используются для инициализации состояния объекта.
+
+## Читать далее
+
+Сжатие и архивирование данных: [https://docs.python.org/3/library/archiving.html](https://docs.python.org/3/library/archiving.html)
+
+&#x20;Документация tempfile: [https://docs.python.org/2/library/tempfile.html ](https://docs.python.org/2/library/tempfile.html)
+
+Документация по криптографии на Python: [https://docs.python.org/3/library/crypto.html](https://docs.python.org/3/library/crypto.html)
+
+Документация по shutil: [https://docs.python.org/3](https://docs.python.org/3/library/shutil.html)
