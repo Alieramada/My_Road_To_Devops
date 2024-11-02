@@ -56,6 +56,8 @@
         * [Тема 1: Архитектура системы](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/README.md)
           * [1.1 Определение и настройка параметров оборудования](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.1-opredelenie-i-nastroika-parametrov-oborudovaniya/README.md)
             * [Урок 1.1.](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.1-opredelenie-i-nastroika-parametrov-oborudovaniya/urok-1.1..md)
+          * [1.2 Загрузка системы](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.2-zagruzka-sistemy/README.md)
+            * [у](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.2-zagruzka-sistemy/u.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
