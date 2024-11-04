@@ -58,6 +58,8 @@
             * [Урок 1.1.](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.1-opredelenie-i-nastroika-parametrov-oborudovaniya/urok-1.1..md)
           * [1.2 Загрузка системы](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.2-zagruzka-sistemy/README.md)
             * [1.2. Урок 1](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.2-zagruzka-sistemy/1.2.-urok-1.md)
+          * [1.3. Изменение уровней запуска / целей загрузки и выключение или перезагрузка системы](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.3.-izmenenie-urovnei-zapuska-celei-zagruzki-i-vyklyuchenie-ili-perezagruzka-sistemy/README.md)
+            * [Урок 1.3.](linux/knigi-po-linux/lpi/lpi-1/tema-1-arkhitektura-sistemy/1.3.-izmenenie-urovnei-zapuska-celei-zagruzki-i-vyklyuchenie-ili-perezagruzka-sistemy/urok-1.3..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
