@@ -262,3 +262,102 @@ Python is an interpreted high-level [...]
 
 Синтаксис этой функции следующий:
 
+```python
+re.match(pattern, string)
+```
+
+Теперь мы рассмотрим пример re.match(). Создайте скрипт re\_match.py и напишите в нем следующее содержимое:
+
+```python
+import re
+
+str_line = "This is python tutorial. Do you enjoy learning python ?"
+obj = re.match(r'(.*) enjoy (.*?) .*', str_line)
+if obj:
+            print(obj.groups())
+```
+
+Запустите скрипт и получите следующий результат:
+
+```bash
+student@ubuntu:~/work$ python3 re_match.py
+('This is python tutorial. Do you', 'learning'
+```
+
+В предыдущем скрипте мы импортировали модуль re для использования регулярных выражений в Python. Затем мы создали строку str\_line. Затем мы создали объект match и сохранили в нем результат сопоставления с шаблоном. В этом примере шаблон (._) enjoy (._?) .\* будет печатать все перед ключевым словом enjoy и только одно слово после ключевого слова enjoy. Далее мы использовали метод groups() для сопоставления объекта. Он выведет все совпадающие подстроки в виде кортежа. Таким образом, результат, который вы получите, будет таким: ('This is python tutorial. Do you', 'learning').
+
+## Функция search()
+
+Функция search() модуля re выполнит поиск по строке. Она будет искать любое местоположение для указанного шаблона re. Функция search() возьмет шаблон и текст и выполнит поиск по указанной нами строке в поисках совпадения. Она вернет объект match, когда будет найдено совпадение. Она вернет None, если совпадение не найдено. Объект match имеет два метода:
+
+group(num): Возвращает полное совпадение groups(): Возвращает все совпадающие подгруппы в кортеже Синтаксис этой функции следующий:
+
+```python
+re.search(pattern, string)
+```
+
+Создайте re\_search.py скрипт и напишите в нем следующее содержимое:
+
+```python
+import re
+
+pattern = ['programming', 'hello']
+str_line = 'Python programming is fun'
+for p in pattern:
+            print("Searching for %s in %s" % (p, str_line))
+            if re.search(p, str_line):
+                        print("Match found")
+            else:
+                        print("No match found")
+```
+
+Запустите скрипт и получите следующий результат:
+
+```bash
+student@ubuntu:~/work$ python3 re_search.py
+Searching for programming in Python programming is fun
+Match found
+Searching for hello in Python programming is fun
+No match found
+```
+
+В предыдущем примере мы использовали метод поиска() объекта match, чтобы найти его шаблон. После импорта модуля re мы указали шаблон в списке. В этом списке мы написали две строки: programming и hello. Затем мы создали строку: "Python programming is fun". Мы написали цикл for, который будет проверять заданный шаблон один за другим. Если совпадение найдено, будет выполнен блок if. Если совпадение не найдено, будет выполнен блок else.
+
+## Функция findall()
+
+Это один из методов объекта match. Метод findall() находит все совпадения и затем возвращает их в виде списка строк. Каждый элемент списка представляет собой совпадение. Этот метод выполняет поиск шаблона без перекрытия.
+
+Создайте re\_findall\_example.py скрипт и напишите в нем следующее содержимое:
+
+```python
+import re
+
+pattern = 'Red'
+colors = 'Red, Blue, Black, Red, Green'
+p = re.findall(pattern, colors)
+print(p)
+
+str_line = 'Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?'
+pt = re.findall('pe\w+', str_line)
+pt1 = re.findall('pic\w+', str_line)
+print(pt)
+print(pt1)
+
+line = 'Hello hello HELLO bye'
+p = re.findall('he\w+', line, re.IGNORECASE)
+print(p)
+```
+
+Запустите скрипт и получите следующий результат:
+
+<pre class="language-bash"><code class="lang-bash"><strong>student@ubuntu:~/work$ python3 re_findall_example.py
+</strong><strong>['Red', 'Red']
+</strong><strong>['per', 'peck', 'peppers', 'peppers', 'per']
+</strong><strong>['picked', 'pickled', 'pickled', 'pick']
+</strong><strong>['Hello', 'hello', 'HELLO']
+</strong></code></pre>
+
+\
+В предыдущем сценарии мы написали три примера метода findall(). В первом примере мы определили шаблон и строку. Мы нашли этот шаблон из строки с помощью метода findall() и затем распечатали его. Во втором примере мы создали строку и нашли слова, первые две буквы которых - pe, используя функцию findall(), а затем напечатали их. Мы получим список слов, первые две буквы которых - pe. Кроме того, мы нашли слова, первые три буквы которых - pic, и затем напечатали их.&#x20;
+
+Здесь мы также получим список строк. В третьем примере мы создали строку, в которой указали hello в верхнем и нижнем регистре, а также слово: bye. Используя findall(), мы находим слова, первые две буквы которых - he. Также в findall() мы использовали re.Флаг IGNORECASE, который будет игнорировать регистр слов и выводить их.
