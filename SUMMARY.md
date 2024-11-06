@@ -63,6 +63,8 @@
         * [Тема 2: Установка Linux и управление пакетами](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/README.md)
           * [2.1. Проектирование компоновки жесткого диска](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.1.-proektirovanie-komponovki-zhestkogo-diska/README.md)
             * [Урок 2.1.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.1.-proektirovanie-komponovki-zhestkogo-diska/urok-2.1..md)
+          * [2.2 Установка диспетчера загрузки](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.2-ustanovka-dispetchera-zagruzki/README.md)
+            * [Урок 2.2.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.2-ustanovka-dispetchera-zagruzki/urok-2.2..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
