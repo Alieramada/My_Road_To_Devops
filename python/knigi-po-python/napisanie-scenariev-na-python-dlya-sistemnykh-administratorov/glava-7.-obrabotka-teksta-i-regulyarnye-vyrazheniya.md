@@ -361,3 +361,197 @@ print(p)
 В предыдущем сценарии мы написали три примера метода findall(). В первом примере мы определили шаблон и строку. Мы нашли этот шаблон из строки с помощью метода findall() и затем распечатали его. Во втором примере мы создали строку и нашли слова, первые две буквы которых - pe, используя функцию findall(), а затем напечатали их. Мы получим список слов, первые две буквы которых - pe. Кроме того, мы нашли слова, первые три буквы которых - pic, и затем напечатали их.&#x20;
 
 Здесь мы также получим список строк. В третьем примере мы создали строку, в которой указали hello в верхнем и нижнем регистре, а также слово: bye. Используя findall(), мы находим слова, первые две буквы которых - he. Также в findall() мы использовали re.Флаг IGNORECASE, который будет игнорировать регистр слов и выводить их.
+
+## Функция sub()&#x20;
+
+Это одна из наиболее важных функций модуля re. Функция sub() используется для замены их шаблона на указанную замену. Она заменит все вхождения шаблона re на строку замены. Синтаксис следующий:
+
+```python
+re.sub(pattern, repl_str, string, count=0)
+```
+
+* pattern: Шаблон
+* repl\_str: Строка замены
+* string: Основная строка
+* count: Значение по умолчанию равно 0, что означает замену всех вхождений.
+
+Теперь мы собираемся создать re\_sub.py скрипт и записать в него следующий контент:
+
+```python
+import re
+
+str_line = 'Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?'
+
+print("Original: ", str_line)
+p = re.sub('Peter', 'Mary', str_line)
+print("Replaced: ", p)
+
+p = re.sub('Peter', 'Mary', str_line, count=1)
+print("Replacing only one occurrence of Peter… ")
+print("Replaced: ", p)
+```
+
+Запустите скрипт и получите следующий результат:
+
+```bash
+student@ubuntu:~/work$ python3 re_sub.py
+Original:  Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?
+Replaced:  Mary Piper picked a peck of pickled peppers. How many pickled peppers did Mary Piper pick?
+Replacing only one occurrence of Peter...
+Replaced:  Mary Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?
+```
+
+В предыдущем примере мы использовали sub(), чтобы заменить шаблон на указанную строку замены. Мы заменили Peter на Mary. Таким образом, все вхождения Peter будут заменены на Mary. Далее мы также включили параметр count. Мы упомянули count=1: это означает, что будет заменено только одно вхождение Peter, а остальные вхождения Peter останутся прежними.
+
+Теперь мы познакомимся с функцией subn() модуля re. Функция subn() работает так же, как и функция sub(), но с дополнительными функциями. Функция subn() вернет кортеж, содержащий новую строку и количество выполненных замен. Давайте рассмотрим пример использования функции subn(). Создайте скрипт re\_subn.py и запишите в него следующее содержимое:
+
+```python
+import re
+
+print("str1:- ")
+str1 = "Sky is blue. Sky is beautiful."
+
+print("Original: ", str1)
+p = re.subn('beautiful', 'stunning', str1)
+print("Replaced: ", p)
+print()
+
+print("str_line:- ")
+str_line = 'Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?'
+
+print("Original: ", str_line)
+p = re.subn('Peter', 'Mary', str_line)
+print("Replaced: ", p)
+```
+
+Запустите скрипт и получите следующий результат:
+
+```
+student@ubuntu:~/work$ python3 re_subn.py
+str1:-
+Original:  Sky is blue. Sky is beautiful.
+Replaced:  ('Sky is blue. Sky is stunning.', 1)
+ 
+str_line:-
+Original:  Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?
+Replaced:  ('Mary Piper picked a peck of pickled peppers. How many pickled peppers did Mary Piper pick?', 2)
+```
+
+В предыдущем примере мы использовали функцию subn() для замены шаблона. В результате мы получили кортеж, содержащий замененную строку и количество замен.\
+
+
+## Строки в Юникоде
+
+В этом разделе мы узнаем о том, как печатать строки в формате Unicode в Python. Python очень просто обрабатывает строки в формате Unicode. Тип string на самом деле содержит строки в формате Unicode, а не последовательность байтов.
+
+Запустите консоль python3 в вашей системе и начните писать следующее:
+
+```python
+GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> print ('\u2713')
+
+>>> print ('\u2724')
+
+>>> print ('\u2750')
+
+>>> print ('\u2780')
+
+>>> chinese = '\u4e16\u754c\u60a8\u597d!
+>>> chinese
+ ----- (Meaning “Hello world!”)
+>>>
+>>> s = '\u092E\u0941\u0902\u092C\u0908'
+>>> s
+'मुंबई'                            ------(Unicode translated in Marathi)
+>>>
+>>> s = '\u10d2\u10d0\u10db\u10d0\u10e0\u10ef\u10dd\u10d1\u10d0'
+>>> s
+'გამარჯობა'                 ------(Meaning “Hello” in Georgian)
+>>>
+>>> s = '\u03b3\u03b5\u03b9\u03b1\u03c3\u03b1\u03c2'
+>>> s
+'γειασας'                     ------(Meaning “Hello” in Greek)
+>>>
+```
+
+## Кодовая точка юникод
+
+**Кодовая точка в Юникоде** — это уникальный номер, который представляет определённый символ или знак в стандарте Юникода. Этот стандарт включает в себя огромное количество символов из разных языков и систем письма, а также специальные символы и эмодзи.
+
+В этом разделе мы познакомимся с кодовой точкой unicode. В Python есть мощная встроенная функция с именем ord() для получения кодовой точки Unicode из заданного символа. Итак, давайте рассмотрим пример получения кодовой точки Unicode из символа, как показано в следующем коде:
+
+```python
+>>> str1 = u'Office'
+>>> for char in str1:
+... print('U+%04x' % ord(char))
+...
+U+004f
+U+0066
+U+0066
+U+0069
+U+0063
+U+0065
+>>> str2 = 
+>>> for char in str2:
+... print('U+%04x' % ord(char))
+...
+U+4e2d
+U+6587
+```
+
+## Кодирование
+
+Преобразование кодовой точки Unicode в байтовую строку называется кодированием. Итак, давайте рассмотрим пример кодирования кодовой точки Unicode, как показано в следующем коде:
+
+```python
+>>> str = u'Office'
+>>> enc_str = type(str.encode('utf-8'))
+>>> enc_str
+<class 'bytes'>
+```
+
+## Декодирование&#x20;
+
+Преобразование байтовой строки в кодовую точку Unicode называется декодированием. Итак, давайте рассмотрим пример того, как декодировать байтовую строку, чтобы получить кодовую точку Unicode, как показано в следующем коде:
+
+```python
+>>> str = bytes('Office', encoding='utf-8')
+>>> dec_str = str.decode('utf-8')
+>>> dec_str
+'Office'
+```
+
+## Как избежать ошибки UnicodeDecodeError&#x20;
+
+Ошибка UnicodeDecodeError возникает всякий раз, когда байтовые строки не удается расшифровать в кодовые точки Unicode. Чтобы избежать этого исключения, мы можем передать replace, backslashreplace или ignore в качестве аргумента error в decode, как показано здесь:
+
+```python
+>>> str = b"\xaf"
+>>> str.decode('utf-8', 'strict')
+    Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaf in position 0: invalid start byte
+
+>>> str.decode('utf-8', "replace")
+'\ufffd'
+>>> str.decode('utf-8', "backslashreplace")
+'\\xaf'
+>>> str.decode('utf-8', "ignore")
+' '
+```
+
+## Резюме
+
+&#x20;В этой главе мы узнали о регулярных выражениях, с помощью которых мы можем определить правила для набора строк, которым мы хотим соответствовать. Мы узнали о четырех функциях модуля re: match(), search(), findall() и sub().
+
+Мы узнали о модуле textwrap, который используется для форматирования и переноса обычного текста. Мы также узнали о функциях wrap(), fill(), dedent(), indent() и shorten() модуля textwrap. Наконец, мы узнали о символах Unicode и о том, как печатать строки Unicode в Python.
+
+## Вопросы
+
+1. Что такое регулярное выражение в Python?
+
+**Регулярное выражение в Python** — это последовательность символов, которая используется для поиска, замены или извлечения определённых фрагментов текста. Регулярные выражения позволяют задавать сложные шаблоны поиска с использованием специальных символов и операторов.
+
+В Python регулярные выражения представлены модулем `re`, который содержит функции для работы с ними. С помощью регулярных выражений можно выполнять различные операции над текстом, такие как поиск подстрок, замена строк, проверка соответствия шаблону и т. д.
