@@ -65,6 +65,8 @@
             * [Урок 2.1.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.1.-proektirovanie-komponovki-zhestkogo-diska/urok-2.1..md)
           * [2.2 Установка диспетчера загрузки](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.2-ustanovka-dispetchera-zagruzki/README.md)
             * [Урок 2.2.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.2-ustanovka-dispetchera-zagruzki/urok-2.2..md)
+          * [2.3 Управление разделяемыми библиотеками](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.3-upravlenie-razdelyaemymi-bibliotekami/README.md)
+            * [Урок 2.3.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.3-upravlenie-razdelyaemymi-bibliotekami/urok-2.3..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
