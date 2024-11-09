@@ -69,6 +69,8 @@
             * [Урок 2.3.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.3-upravlenie-razdelyaemymi-bibliotekami/urok-2.3..md)
           * [2.4 Управление пакетами Debian](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.4-upravlenie-paketami-debian/README.md)
             * [Урок 2.4.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.4-upravlenie-paketami-debian/urok-2.4..md)
+          * [2.5 RPM и YUM менеджер пакетов](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.5-rpm-i-yum-menedzher-paketov/README.md)
+            * [Урок 2.5.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.5-rpm-i-yum-menedzher-paketov/urok-2.5..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
