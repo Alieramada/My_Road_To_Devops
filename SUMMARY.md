@@ -71,6 +71,8 @@
             * [Урок 2.4.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.4-upravlenie-paketami-debian/urok-2.4..md)
           * [2.5 RPM и YUM менеджер пакетов](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.5-rpm-i-yum-menedzher-paketov/README.md)
             * [Урок 2.5.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.5-rpm-i-yum-menedzher-paketov/urok-2.5..md)
+          * [2.6 Linux как гость виртуализации](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.6-linux-kak-gost-virtualizacii/README.md)
+            * [Урок 2.6.](linux/knigi-po-linux/lpi/lpi-1/tema-2-ustanovka-linux-i-upravlenie-paketami/2.6-linux-kak-gost-virtualizacii/urok-2.6..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
