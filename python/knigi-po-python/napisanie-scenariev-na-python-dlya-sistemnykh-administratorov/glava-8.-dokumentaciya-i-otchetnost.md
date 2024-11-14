@@ -223,3 +223,178 @@ Left aligned: Hello, I am Mary       !!
 ```
 
 В предыдущем примере мы использовали оператор % для форматирования строк: %d для чисел, %s для строк и %f для чисел с плавающей точкой. Затем мы выровняли строку по левому и правому краю. Мы также узнали, как обрезать строку с помощью оператора %. %.4s будет отображать только первые четыре символа. Далее мы создали словарь с именем students и ввели пары "Имя" и "Значение ключа адреса". Затем мы поместили наши ключевые имена после оператора %, чтобы получить строки.
+
+## Отправка электронной почты
+
+В этом разделе мы узнаем об отправке электронного письма с помощью скрипта на Python. Для этого в Python есть модуль smtplib. Модуль smtplib в Python предоставляет объект сеанса SMTP-клиента, который используется для отправки электронного письма на любой компьютер, подключенный к Интернету с помощью SMTP-прослушивателя.
+
+Мы рассмотрим пример. В этом примере мы отправим получателям электронное письмо, содержащее простой текст из Gmail.
+
+Создайте send\_email.py скрипт и напишите в нем следующее содержимое:
+
+```python
+import smtplib
+from email.mime.text import MIMEText
+import getpass
+
+host_name = 'smtp.gmail.com'
+port = 465
+
+u_name = 'username/emailid'
+password = getpass.getpass()
+sender = 'sender_name'
+receivers = ['receiver1_email_address', 'receiver2_email_address']
+
+text = MIMEText('Test mail')
+text['Subject'] = 'Test'
+text['From'] = sender
+text['To'] = ', '.join(receivers)
+
+s_obj = smtplib.SMTP_SSL(host_name, port)
+s_obj.login(u_name, password)
+s_obj.sendmail(sender, receivers, text.as_string())
+s_obj.quit()
+print("Mail sent successfully")
+```
+
+Запустите скрипт:
+
+```bash
+student@ubuntu:~/work$ python3 send_text.py
+```
+
+Вывод:
+
+```bash
+Password:
+Mail sent successfully
+```
+
+В предыдущем примере мы отправили электронное письмо с нашего идентификатора Gmail получателям. В переменной username будет сохранен ваш идентификатор электронной почты. В переменной password вы можете либо ввести свой пароль, либо запросить пароль с помощью модуля getpass. Здесь мы запрашиваем пароль. Далее в переменной sender будет указано ваше имя. Теперь мы собираемся отправить это электронное письмо нескольким получателям. Затем мы указали тему, от кого и кому для этого электронного письма. Затем в login() мы указали наши переменные имени пользователя и пароля. Далее, в sendmail() мы указали отправителя, получателей и текстовые переменные. Итак, используя этот процесс, мы успешно отправили электронное письмо.
+
+Теперь мы рассмотрим еще один пример отправки электронного письма с вложением. В этом примере мы собираемся отправить получателю изображение. Мы собираемся отправить это письмо через Gmail. Создайте скрипт send\_email\_attachment.py и напишите в нем следующее содержимое:
+
+```python
+import os
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+import getpass
+
+host_name = 'smtp.gmail.com'
+port = 465
+
+u_name = 'username/emailid'
+password = getpass.getpass()
+sender = 'sender_name'
+receivers = ['receiver1_email_address', 'receiver2_email_address']
+
+text = MIMEMultipart()
+text['Subject'] = 'Test Attachment'
+text['From'] = sender
+text['To'] = ', '.join(receivers)
+
+txt = MIMEText('Sending a sample image.')
+text.attach(txt)
+
+f_path = '/home/student/Desktop/mountain.jpg'
+with open(f_path, 'rb') as f:
+    img = MIMEImage(f.read())
+
+img.add_header('Content-Disposition',
+               'attachment',
+               filename=os.path.basename(f_path))
+
+text.attach(img)
+
+server = smtplib.SMTP_SSL(host_name, port)
+server.login(u_name, password)
+server.sendmail(sender, receivers, text.as_string())
+print("Email with attachment sent successfully !!")
+server.quit()
+```
+
+Запустите скрипт:
+
+```bash
+student@ubuntu:~/work$ python3 send_email_attachment.py
+```
+
+Вывод:
+
+```
+Password:
+Email with attachment sent successfully!!
+```
+
+В предыдущем примере мы отправили изображение в качестве вложения получателям. Мы указали идентификаторы электронной почты отправителя и получателей. Далее, в поле f\_path, мы указали путь к изображению, которое мы отправили в качестве вложения. Затем мы отправили это изображение в качестве приложения получателю.
+
+{% hint style="info" %}
+В двух предыдущих примерах – send\_text.py и send\_email\_attachment.py – мы отправляли электронные письма через Gmail. Вы можете отправлять через любых других поставщиков электронной почты. Чтобы использовать любого другого поставщика электронной почты, просто введите имя этого поставщика в поле host\_name. Не забудьте добавить smtp перед этим. В этом примере мы использовали smtp.gmail.com; для Yahoo! вы можете использовать smtp.mail.yahoo.com. Таким образом, вы можете изменить имя хоста, а также порт в соответствии с вашими поставщиками услуг электронной почты.
+{% endhint %}
+
+## Bыводы
+
+В этой главе мы познакомились со стандартным вводом и выводом данных. Мы узнали, как stdin и stdout выполняют функции ввода с клавиатуры и пользовательского терминала соответственно. Мы также узнали о функциях input() и print(). В дополнение к этому мы узнали об отправке электронного письма из Gmail . Мы отправили электронное письмо с простым текстом, а также вложение. Также мы узнали о форматировании строк с использованием метода format() и оператора %.
+
+В следующей главе вы узнаете о том, как работать с различными файлами, такими как PDF, Excel и csv.
+
+## Вопросы
+
+1. В чем разница между stdin и input?
+
+В контексте языков программирования, таких как Python,  **input** — это функция или метод, который позволяет пользователю вводить данные с клавиатуры. Функция input() останавливает выполнение программы и ждёт, пока пользователь введёт данные.
+
+**Stdin** (standard input) — это стандартный поток ввода в операционных системах и языках программирования. Он представляет собой поток данных, через который программа может получать входные данные. Stdin обычно связан с клавиатурой, но может быть перенаправлен из других источников, таких как файлы или другие программы.
+
+Таким образом, основное различие между stdin и input заключается в том, что stdin — это поток ввода, а input — это функция для получения данных от пользователя.
+
+2. Что такое SMTP?
+
+**SMTP** (Simple Mail Transfer Protocol) — это простой протокол передачи почты, который используется для отправки электронных писем между почтовыми серверами. Он определяет правила и формат сообщений, которые передаются между отправителем и получателем.
+
+С помощью SMTP можно отправлять письма с любого устройства, подключённого к интернету, на любой почтовый сервер. Для этого нужно знать адрес сервера, порт, имя пользователя и пароль. SMTP работает на основе клиент-серверной модели, где клиент отправляет сообщение на сервер, а сервер пересылает его на другой сервер или доставляет получателю.
+
+3. Какой будет вывод у следующего кода?
+
+```python
+>>> name = "Eric"
+>>> profession = "comedian"
+>>> affiliation = "Monty Python"
+>>> age = 25
+>>> message = (
+...     f"Hi {name}. "
+...     f"You are a {profession}. "
+...     f"You were in {affiliation}."
+... )
+>>> message
+```
+
+Output:
+
+```
+Hi Eric. You are a comedian. You were in Monty Python.
+```
+
+4. Какой будет вывод у следующего кода?
+
+```bash
+str1 = 'Hello'
+str2 ='World!'
+print('str1 + str2 = ', str1 + str2)
+print('str1 * 3 =', str1 * 3)
+```
+
+Output:
+
+```
+str1 + str2 = Helloworld!
+str1 * 3 = HelloHelloHello
+```
+
+## Читать далее
+
+Документация по строкам: [https://docs.python.org/3.1/library/string.html ](https://docs.python.org/3.1/library/string.html)
+
+Документация smptplib: [https://docs.python.org/3/library/smtplib.html ](https://docs.python.org/3/library/smtplib.html)
