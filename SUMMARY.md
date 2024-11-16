@@ -79,6 +79,8 @@
             * [Урок 3.1.2.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.1-rabota-v-komandnoi-stroke/urok-3.1.2..md)
           * [3.2 Обработка текстовых потоков с помощью фильтров](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.2-obrabotka-tekstovykh-potokov-s-pomoshyu-filtrov/README.md)
             * [Урок 3.2](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.2-obrabotka-tekstovykh-potokov-s-pomoshyu-filtrov/urok-3.2.md)
+          * [3.3 Базовое управление файлами](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.3-bazovoe-upravlenie-failami/README.md)
+            * [Урок 3.3.1.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.3-bazovoe-upravlenie-failami/urok-3.3.1..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
