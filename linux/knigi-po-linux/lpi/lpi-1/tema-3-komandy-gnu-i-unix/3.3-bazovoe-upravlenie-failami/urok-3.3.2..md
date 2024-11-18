@@ -95,7 +95,7 @@ $ sudo find / -name "*.conf" -mtime 7
 `find` Вы также можете найти файлы по _размеру_. Например, поиск файлов размером более `2G` в `/var`:
 
 ```bash
-$ sudo find /var -размер +2G
+$ sudo find /var -size +2G
 /var/lib/libvirt/images/debian10.qcow2
 /var/lib/libvirt/images/rhel8.qcow2
 ```
