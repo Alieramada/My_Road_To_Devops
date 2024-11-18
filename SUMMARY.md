@@ -82,6 +82,8 @@
           * [3.3 Базовое управление файлами](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.3-bazovoe-upravlenie-failami/README.md)
             * [Урок 3.3.1.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.3-bazovoe-upravlenie-failami/urok-3.3.1..md)
             * [Урок 3.3.2.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.3-bazovoe-upravlenie-failami/urok-3.3.2..md)
+        * [Тема 3.4: Использование потоков, каналов и перенаправления](linux/knigi-po-linux/lpi/lpi-1/tema-3.4-ispolzovanie-potokov-kanalov-i-perenapravleniya/README.md)
+          * [Урок 3.4.1.](linux/knigi-po-linux/lpi/lpi-1/tema-3.4-ispolzovanie-potokov-kanalov-i-perenapravleniya/urok-3.4.1..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
