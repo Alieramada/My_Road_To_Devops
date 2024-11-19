@@ -106,4 +106,5 @@
       * [Глава 7. Обработка текста и регулярные выражения](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-7.-obrabotka-teksta-i-regulyarnye-vyrazheniya.md)
       * [Глава 8. Документация и отчетность](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-8.-dokumentaciya-i-otchetnost.md)
       * [Глава 9. Работа с различными файлами](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-9.-rabota-s-razlichnymi-failami.md)
+      * [Глава 9. Базовое программирование сетевых сокетов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-9.-bazovoe-programmirovanie-setevykh-soketov.md)
 * [GOLang](golang.md)
