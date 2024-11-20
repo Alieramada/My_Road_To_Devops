@@ -87,6 +87,7 @@
             * [Урок 3.4.2.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.4-ispolzovanie-potokov-kanalov-i-perenapravleniya/urok-3.4.2..md)
           * [3.5 Создание, отслеживание и завершение процессов](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.5-sozdanie-otslezhivanie-i-zavershenie-processov/README.md)
             * [Урок 3.5.1.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.5-sozdanie-otslezhivanie-i-zavershenie-processov/urok-3.5.1..md)
+            * [103.5 Урок 2](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.5-sozdanie-otslezhivanie-i-zavershenie-processov/103.5-urok-2.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
