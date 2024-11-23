@@ -93,6 +93,8 @@
           * [3.7 Поиск текстовых файлов с использованием регулярных выражений](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.7-poisk-tekstovykh-failov-s-ispolzovaniem-regulyarnykh-vyrazhenii/README.md)
             * [Урок 3.7.1.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.7-poisk-tekstovykh-failov-s-ispolzovaniem-regulyarnykh-vyrazhenii/urok-3.7.1..md)
             * [Урок 3.7.2.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/3.7-poisk-tekstovykh-failov-s-ispolzovaniem-regulyarnykh-vyrazhenii/urok-3.7.2..md)
+          * [Урок 3.8 Базовое редактирование файлов](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/urok-3.8-bazovoe-redaktirovanie-failov/README.md)
+            * [Урок 3.8.](linux/knigi-po-linux/lpi/lpi-1/tema-3-komandy-gnu-i-unix/urok-3.8-bazovoe-redaktirovanie-failov/urok-3.8..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
