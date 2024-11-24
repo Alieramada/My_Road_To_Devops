@@ -98,6 +98,8 @@
         * [Тема 4: Устройства, файловые системы Linux, стандарт иерархии файловых систем](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/README.md)
           * [4.1 Создание разделов и файловых систем](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.1-sozdanie-razdelov-i-failovykh-sistem/README.md)
             * [Урок 4.1.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.1-sozdanie-razdelov-i-failovykh-sistem/urok-4.1..md)
+          * [4.2 Поддержание целостности файловых систем](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.2-podderzhanie-celostnosti-failovykh-sistem/README.md)
+            * [Урок 4.2.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.2-podderzhanie-celostnosti-failovykh-sistem/urok-4.2..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
