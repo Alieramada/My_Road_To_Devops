@@ -216,7 +216,7 @@ $ ls -l | head | wc -w
 
 Как упоминалось ранее, по умолчанию `head` отображает только первые 10 строк указанного текстового файла. Это поведение можно изменить с помощью специальных параметров. Чтобы узнать больше, <mark style="background-color:orange;">**обратитесь к справочной странице команды.**</mark>
 
-Есть ещё одна команда, которая отображает конец файла: `tail`. По умолчанию эта команда выбирает последние 10 строк и отображает их, но, как и в случае с `head` количество строк можно изменить. <mark style="background-color:orange;">**Подробнее см. на странице**</mark><mark style="background-color:orange;">** **</mark><mark style="background-color:orange;">**`tail`**</mark><mark style="background-color:orange;">** **</mark><mark style="background-color:orange;">**man.**</mark>
+Есть ещё одна команда, которая отображает конец файла: `tail`. По умолчанию эта команда выбирает последние 10 строк и отображает их, но, как и в случае с `head` количество строк можно изменить. <mark style="background-color:orange;">**Подробнее см. на странице**</mark><mark style="background-color:orange;">**&#x20;**</mark><mark style="background-color:orange;">**`tail`**</mark><mark style="background-color:orange;">**&#x20;**</mark><mark style="background-color:orange;">**man.**</mark>
 
 {% hint style="info" %}
 Опция `-f` может отображать последние строки файла во время его обновления. Эта функция может быть очень полезна при отслеживании текущей активности в файле, например, `syslog`
