@@ -104,6 +104,8 @@
             * [Урок 4.3.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.3-upravlenie-montazhom-i-razmontirovaniem-failovykh-sistem/urok-4.3..md)
           * [4.4 Управление разрешениями для файлов и правами собственности](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.4-upravlenie-razresheniyami-dlya-failov-i-pravami-sobstvennosti/README.md)
             * [Урок 4.4.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.4-upravlenie-razresheniyami-dlya-failov-i-pravami-sobstvennosti/urok-4.4..md)
+          * [4.5 Создание и изменение жестких и символических ссылок](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.5-sozdanie-i-izmenenie-zhestkikh-i-simvolicheskikh-ssylok/README.md)
+            * [Урок 4.5.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.5-sozdanie-i-izmenenie-zhestkikh-i-simvolicheskikh-ssylok/urok-4.5..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)

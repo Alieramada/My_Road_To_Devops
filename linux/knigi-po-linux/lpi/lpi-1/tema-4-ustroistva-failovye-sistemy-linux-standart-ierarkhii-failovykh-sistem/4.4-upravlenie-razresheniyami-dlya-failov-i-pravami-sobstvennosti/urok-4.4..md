@@ -802,7 +802,8 @@ $ ls -lh test.sh
 
     Конечно, вы можете указать SGID и флаг sticky с помощью только одной команды `chmod`:
 
-    <pre class="language-bash"><code class="lang-bash"><strong>$ chmod g + wxs, o + t Box/
-    </strong></code></pre>
+    ```bash
+    $ chmod g + wxs, o + t Box/
+    ```
 
     Бонусные баллы, если вы подумали об этом.
