@@ -108,6 +108,8 @@
             * [Урок 4.5.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.5-sozdanie-i-izmenenie-zhestkikh-i-simvolicheskikh-ssylok/urok-4.5..md)
           * [4.6 Поиск системных файлов и расположение их в нужных местах](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.6-poisk-sistemnykh-failov-i-raspolozhenie-ikh-v-nuzhnykh-mestakh/README.md)
             * [Урок 4.6.](linux/knigi-po-linux/lpi/lpi-1/tema-4-ustroistva-failovye-sistemy-linux-standart-ierarkhii-failovykh-sistem/4.6-poisk-sistemnykh-failov-i-raspolozhenie-ikh-v-nuzhnykh-mestakh/urok-4.6..md)
+        * [Тема 5: Оболчки и скрипты оболочек](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/README.md)
+          * [5.1 Настройка и использование среды shell](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.1-nastroika-i-ispolzovanie-sredy-shell.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
