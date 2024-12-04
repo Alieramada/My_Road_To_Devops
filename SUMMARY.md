@@ -112,6 +112,7 @@
           * [5.1 Настройка и использование среды shell](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.1-nastroika-i-ispolzovanie-sredy-shell/README.md)
             * [Урок 5.1.1.](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.1-nastroika-i-ispolzovanie-sredy-shell/urok-5.1.1..md)
             * [Урок 5.1.2.](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.1-nastroika-i-ispolzovanie-sredy-shell/urok-5.1.2..md)
+            * [Урок 5.1.3.](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.1-nastroika-i-ispolzovanie-sredy-shell/urok-5.1.3..md)
           * [Page 1](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/page-1.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
