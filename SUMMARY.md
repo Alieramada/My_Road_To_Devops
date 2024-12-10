@@ -115,6 +115,7 @@
             * [Урок 5.1.3.](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.1-nastroika-i-ispolzovanie-sredy-shell/urok-5.1.3..md)
           * [5.2 Настройка или написание простых скриптов](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.2-nastroika-ili-napisanie-prostykh-skriptov/README.md)
             * [Урок 5.2.1.](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.2-nastroika-ili-napisanie-prostykh-skriptov/urok-5.2.1..md)
+            * [Урок 5.2.2.](linux/knigi-po-linux/lpi/lpi-1/tema-5-obolchki-i-skripty-obolochek/5.2-nastroika-ili-napisanie-prostykh-skriptov/urok-5.2.2..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
