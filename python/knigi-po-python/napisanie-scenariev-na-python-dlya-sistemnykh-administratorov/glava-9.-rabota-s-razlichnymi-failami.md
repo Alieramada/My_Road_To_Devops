@@ -561,7 +561,7 @@ text_file.write("Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\n")
 text_file.close()
 ```
 
-<figure><img src="../../../.gitbook/assets/изображение.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/изображение (3).png" alt=""><figcaption></figcaption></figure>
 
 Теперь проверьте свой текущий рабочий каталог. Вы найдете файл test.txt, который мы создали. Теперь проверьте содержимое файла. Вы обнаружите, что дни, которые мы записали в функции write(), будут сохранены в test.txt.
 
