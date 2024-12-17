@@ -121,6 +121,8 @@
             * [Урок 6.1.](linux/knigi-po-linux/lpi/lpi-1/tema-6-polzovatelskie-interfeisy-i-rabochie-stoly/6.1-ustanovka-i-nastroika-x11/urok-6.1..md)
           * [6.2 Графические рабочие столы](linux/knigi-po-linux/lpi/lpi-1/tema-6-polzovatelskie-interfeisy-i-rabochie-stoly/6.2-graficheskie-rabochie-stoly/README.md)
             * [Урок 6.2.](linux/knigi-po-linux/lpi/lpi-1/tema-6-polzovatelskie-interfeisy-i-rabochie-stoly/6.2-graficheskie-rabochie-stoly/urok-6.2..md)
+          * [Урок 6.3. Доступность](linux/knigi-po-linux/lpi/lpi-1/tema-6-polzovatelskie-interfeisy-i-rabochie-stoly/urok-6.3.-dostupnost/README.md)
+            * [Урок 6.3.](linux/knigi-po-linux/lpi/lpi-1/tema-6-polzovatelskie-interfeisy-i-rabochie-stoly/urok-6.3.-dostupnost/urok-6.3..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
