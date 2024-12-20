@@ -130,6 +130,8 @@
           * [7.2 Автоматизация задач системного администрирования путем планирования заданий](linux/knigi-po-linux/lpi/lpi-1/tema-7-administrativnye-zadachi/7.2-avtomatizaciya-zadach-sistemnogo-administrirovaniya-putem-planirovaniya-zadanii/README.md)
             * [Урок 7.2.1.](linux/knigi-po-linux/lpi/lpi-1/tema-7-administrativnye-zadachi/7.2-avtomatizaciya-zadach-sistemnogo-administrirovaniya-putem-planirovaniya-zadanii/urok-7.2.1..md)
             * [Урок 7.2.2.](linux/knigi-po-linux/lpi/lpi-1/tema-7-administrativnye-zadachi/7.2-avtomatizaciya-zadach-sistemnogo-administrirovaniya-putem-planirovaniya-zadanii/urok-7.2.2..md)
+          * [7.3 Локализация и интернационализация](linux/knigi-po-linux/lpi/lpi-1/tema-7-administrativnye-zadachi/7.3-lokalizaciya-i-internacionalizaciya/README.md)
+            * [Урок 7.3.](linux/knigi-po-linux/lpi/lpi-1/tema-7-administrativnye-zadachi/7.3-lokalizaciya-i-internacionalizaciya/urok-7.3..md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
