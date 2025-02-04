@@ -138,6 +138,7 @@
             * [Урок 8.1.2.](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.1-podderzhanie-sistemnogo-vremeni/urok-8.1.2..md)
           * [8.2 Ведение системного журнала](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.2-vedenie-sistemnogo-zhurnala/README.md)
             * [Урок 8.2.1](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.2-vedenie-sistemnogo-zhurnala/urok-8.2.1.md)
+    * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
