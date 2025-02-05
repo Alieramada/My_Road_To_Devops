@@ -139,6 +139,8 @@
           * [8.2 Ведение системного журнала](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.2-vedenie-sistemnogo-zhurnala/README.md)
             * [Урок 8.2.1](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.2-vedenie-sistemnogo-zhurnala/urok-8.2.1.md)
             * [Урок 8.2.2.](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.2-vedenie-sistemnogo-zhurnala/urok-8.2.2..md)
+          * [8.3 Основы агента по передаче почты (MTA)](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.3-osnovy-agenta-po-peredache-pochty-mta/README.md)
+            * [Урок 8.3.1.](linux/knigi-po-linux/lpi/lpi-1/tema-8-osnovnye-sistemnye-sluzhby/8.3-osnovy-agenta-po-peredache-pochty-mta/urok-8.3.1..md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
