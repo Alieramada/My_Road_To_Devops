@@ -153,6 +153,8 @@
           * [9.3 Основные способы устранения неполадок в сети](linux/knigi-po-linux/lpi/lpi-1/tema-9-osnovy-setevykh-tekhnologii/9.3-osnovnye-sposoby-ustraneniya-nepoladok-v-seti/README.md)
             * [Урок 9.3.1.](linux/knigi-po-linux/lpi/lpi-1/tema-9-osnovy-setevykh-tekhnologii/9.3-osnovnye-sposoby-ustraneniya-nepoladok-v-seti/urok-9.3.1..md)
             * [Урок 9.3.2](linux/knigi-po-linux/lpi/lpi-1/tema-9-osnovy-setevykh-tekhnologii/9.3-osnovnye-sposoby-ustraneniya-nepoladok-v-seti/urok-9.3.2.md)
+          * [9.4 Настройка DNS на стороне клиента](linux/knigi-po-linux/lpi/lpi-1/tema-9-osnovy-setevykh-tekhnologii/9.4-nastroika-dns-na-storone-klienta/README.md)
+            * [Урок 9.4.](linux/knigi-po-linux/lpi/lpi-1/tema-9-osnovy-setevykh-tekhnologii/9.4-nastroika-dns-na-storone-klienta/urok-9.4..md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
