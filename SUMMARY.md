@@ -167,6 +167,7 @@
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
       * [Глава 3. Поиск и подстановки](linux/knigi-po-linux/classic-shell-scripting/glava-3.-poisk-i-podstanovki.md)
+      * [Глава 4. Инструменты для обработки текста](linux/knigi-po-linux/classic-shell-scripting/glava-4.-instrumenty-dlya-obrabotki-teksta.md)
 * [Python](python/README.md)
   * [Книги по Python](python/knigi-po-python/README.md)
     * [Написание сценариев на Python для системных администраторов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/README.md)
