@@ -162,6 +162,7 @@
             * [Урок 10.2.1](linux/knigi-po-linux/lpi/lpi-1/tema-10-bezopasnost/10.2-nastroika-bezopasnosti-khosta/urok-10.2.1.md)
           * [10.3 Защита данных с помощью шифрования](linux/knigi-po-linux/lpi/lpi-1/tema-10-bezopasnost/10.3-zashita-dannykh-s-pomoshyu-shifrovaniya/README.md)
             * [Урок 10.3.1](linux/knigi-po-linux/lpi/lpi-1/tema-10-bezopasnost/10.3-zashita-dannykh-s-pomoshyu-shifrovaniya/urok-10.3.1.md)
+            * [Урок 10.3.2.](linux/knigi-po-linux/lpi/lpi-1/tema-10-bezopasnost/10.3-zashita-dannykh-s-pomoshyu-shifrovaniya/urok-10.3.2..md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
