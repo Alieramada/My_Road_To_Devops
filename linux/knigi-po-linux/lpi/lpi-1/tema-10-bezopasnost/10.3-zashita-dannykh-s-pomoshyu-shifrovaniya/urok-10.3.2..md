@@ -227,3 +227,316 @@ uid           [ revoked] sonya <sonya@debian>
 
 И последнее, но не менее важное: убедитесь, что отозванный ключ доступен любой стороне, у которой есть связанные с ним открытые ключи (включая серверы ключей).
 
+## Использование GPG для шифрования, дешифрования, подписи и проверки файлов <a href="#use_gpg_to_encrypt_decrypt_sign_and_verify_files" id="use_gpg_to_encrypt_decrypt_sign_and_verify_files"></a>
+
+В предыдущем разделе `carol` отправила свой открытый ключ `ina`. Теперь мы будем использовать его, чтобы обсудить, как GPG может шифровать, расшифровывать, подписывать и проверять файлы.
+
+## **Шифрование и дешифрование файлов**
+
+Сначала `ina` должна импортировать открытый ключ `carol` (`carol.pub.key`) в свою связку ключей, чтобы начать с ним работать:
+
+```bash
+ina@halof:~> gpg --import carol.pub.key
+gpg: /home/ina/.gnupg/trustdb.gpg: trustdb created
+gpg: key 19BBEFD16813034E: public key "carol <carol@debian>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+ina@halof:~> gpg --list-keys
+/home/ina/.gnupg/pubring.kbx
+----------------------------
+pub   rsa3072 2020-07-03 [SC] [expires: 2022-07-03]
+      D18FA0021F644CDAF57FD0F919BBEFD16813034E
+uid           [ unknown] carol <carol@debian>
+sub   rsa3072 2020-07-03 [E] [expires: 2022-07-03]
+```
+
+Далее вы создадите файл, вписав в него текст, а затем зашифруете его с помощью `gpg` (поскольку вы не подписали ключ `carol`', вас спросят, хотите ли вы использовать этот ключ):
+
+<pre class="language-bash"><code class="lang-bash">ina@halof:~> echo "This is the message ..." > unencrypted-message
+ina@halof:~> gpg --output encrypted-message --recipient carol --armor --encrypt unencrypted-message
+gpg: 0227347CC92A5CB1: There is no assurance this key belongs to the named user
+sub  rsa3072/0227347CC92A5CB1 2020-07-03 carol &#x3C;carol@debian>
+ Primary key fingerprint: D18F A002 1F64 4CDA F57F  D0F9 19BB EFD1 6813 034E
+      Subkey fingerprint: 9D89 1BF9 39A4 C130 E44B  1135 0227 347C C92A 5CB1
+
+It is NOT certain that the key belongs to the person named
+<strong>in the user ID.  If you really know what you are doing,
+</strong>you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
+</code></pre>
+
+Давайте разберем `gpg` команду:
+
+`--output encrypted-message`
+
+Указание имени файла для зашифрованной версии исходного файла (`encrypted-message` в примере).
+
+`--recipient carol`
+
+Спецификация получателя `USER-ID` (`carol` в нашем примере). Если она не указана, GnuPG запросит её (если `--default-recipient` не указано).
+
+`--armor`
+
+Эта опция позволяет получить защищённый от ASCII вывод, который можно скопировать в электронное письмо.
+
+`--encrypt unencrypted-message`
+
+Спецификация имени файла исходного файла для шифрования.
+
+Теперь вы можете отправить `encrypted-message` кому `carol` на `debian` с помощью `scp`:
+
+```bash
+ina@halof:~> scp encrypted-message carol@debian:/home/carol/
+carol@debian's password:
+encrypted-message                                                             100%  736     1.8MB/s   00:00
+```
+
+Если вы войдёте в систему под именем `carol` и попытаетесь прочитать `encrypted-message`, вы увидите, что оно действительно зашифровано и, следовательно, не читается:
+
+```bash
+carol@debian:~$ cat encrypted-message
+-----BEGIN PGP MESSAGE-----
+
+hQGMAwInNHzJKlyxAQv/brJ8Ubs/xya35sbv6kdRKm1C7ONLxL3OueWA4mCs0Y/P
+GBna6ZEUCrMEgl/rCyByj3Yq74kuiTmzxAIRUDdvHfj0TtrOWjVAqIn/fPSfMkjk
+dTxKo1i55tLJ+sj17dGMZDcNBinBTP4U1atuN71A5w7vH+XpcesRcFQLKiSOmYTt
+F7SN3/5x5J6io4ISn+b0KbJgiJNNx+Ne/ub4Uzk4NlK7tmBklyC1VRualtxcG7R9
+1klBPYSld6fTdDwT1Y4MofpyILAiGMZvUR1RXauEKf7OIzwC5gWU+UQPSgeCdKQu
+X7QL0ZIBS0Ug2XKrO1k93lmDjf8PWsRIml6n/hNelaOBA3HMP0b6Ozv1gFeEsFvC
+IxhUYPb+rfuNFTMEB7xIO94AAmWB9N4qknMxdDqNE8WhA728Plw6y8L2ngsplY15
+MR4lIFDpljA/CcVh4BXVe9j0TdFWDUkrFMfaIfcPQwKLXEYJp19XYIaaEazkOs5D
+W4pENN0YOcX0KWyAYX6r0l8BF0rq/HMenQwqAVXMG3s8ATuUOeqjBbR1x1qCvRQP
+CR/3V73aQwc2j5ioQmhWYpqxiro0yKX2Ar/E6rZyJtJYrq+CUk8O3JoBaudknNFj
+pwuRwF1amwnSZ/MZ/9kMKQ==
+=g1jw
+-----END PGP MESSAGE-----
+```
+
+Однако, поскольку у вас есть закрытый ключ, вы можете легко расшифровать сообщение, передав параметр `gpg` с опцией `--decrypt` и указав путь к зашифрованному файлу (потребуется парольная фраза закрытого ключа):
+
+```bash
+carol@debian:~$ gpg --decrypt encrypted-message
+gpg: encrypted with 3072-bit RSA key, ID 0227347CC92A5CB1, created 2020-07-03
+      "carol <carol@debian>"
+This is the message ...
+```
+
+Вы также можете указать параметр `--output` для сохранения сообщения в новом незашифрованном файле:
+
+```bash
+carol@debian:~$ gpg --output unencrypted-message --decrypt encrypted-message
+gpg: encrypted with 3072-bit RSA key, ID 0227347CC92A5CB1, created 2020-07-03
+      "carol <carol@debian>"
+carol@debian:~$ cat unencrypted-message
+This is the message ...
+```
+
+## **Подписание и проверка Файлов**
+
+Помимо шифрования, GPG можно использовать для подписи файлов. Здесь актуальна опция `--sign`. Давайте начнём с создания нового сообщения (`message`) и его подписи с помощью опции `--sign`. (потребуется парольная фраза вашего закрытого ключа):
+
+```bash
+carol@debian:~$ echo "This is the message to sign ..." > message
+carol@debian:~$ gpg --output message.sig --sign message
+(...)
+```
+
+Разбивка команды `gpg`:
+
+`--output message`
+
+Указание имени файла подписанной версии исходного файла (`message.sig` в нашем примере).
+
+`--sign message`
+
+Путь к исходному файлу.
+
+{% hint style="info" %}
+С помощью `--sign` документ сжимается, а затем подписывается. Результат выводится в двоичном формате.
+{% endhint %}
+
+Далее мы перенесём файл на`ina`` ``halof` с помощью `scp message.sig ina@halof:/home/ina` . Вернувшись на `ina`  `halof`, вы можете проверить его с помощью опции `--verify`:
+
+```bash
+ina@halof:~> gpg --verify message.sig
+gpg: Signature made Sat 04 jul 2020 14:34:41 CEST
+gpg:                using RSA key D18FA0021F644CDAF57FD0F919BBEFD16813034E
+gpg: Good signature from "carol <carol@debian>" [unknown]
+(...)
+```
+
+Если вы также хотите прочитать файл, вам нужно расшифровать его в новый файл (`message` в нашем случае) с помощью опции `--output`:
+
+```bash
+ina@halof:~> gpg --output message --decrypt message.sig
+gpg: Signature made Sat 04 jul 2020 14:34:41 CEST
+gpg:                using RSA key D18FA0021F644CDAF57FD0F919BBEFD16813034E
+gpg: Good signature from "carol <carol@debian>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: D18F A002 1F64 4CDA F57F  D0F9 19BB EFD1 6813 034E
+ina@halof:~> cat message
+This is the message to sign ...
+```
+
+## **GPG-Агент**
+
+Мы завершим этот урок кратким описанием `gpg-agent`. `gpg-agent` — это демон, который управляет закрытыми ключами для GPG (он запускается по требованию `gpg`). Чтобы просмотреть список наиболее полезных опций, запустите `gpg-agent --help` или `gpg-agent -h`:
+
+```bash
+carol@debian:~$ gpg-agent --help
+gpg-agent (GnuPG) 2.2.4
+libgcrypt 1.8.1
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Syntax: gpg-agent [options] [command [args]]
+Secret key management for GnuPG
+
+Options:
+
+     --daemon                        run in daemon mode (background)
+     --server                        run in server mode (foreground)
+     --supervised                    run in supervised mode
+ -v, --verbose                       verbose
+ -q, --quiet                         be somewhat more quiet
+ -s, --sh                            sh-style command output
+ -c, --csh                           csh-style command output
+(...)
+```
+
+{% hint style="info" %}
+Для получения дополнительной информации обратитесь к справочной странице `gpg-agent`.
+{% endhint %}
+
+## Управляемые Упражнения <a href="#sec.110.3_02-ge" id="sec.110.3_02-ge"></a>
+
+1.  Заполните таблицу, указав правильное имя файла:
+
+    | Описание                        | Имя файла |
+    | ------------------------------- | --------- |
+    | База данных доверенных хостов   |           |
+    | Каталог отозванных сертификатов |           |
+    | Каталог закрытых ключей         |           |
+    | Каталог открытых ключей         |           |
+2. Ответьте на следующие вопросы:
+   * Какой тип криптографии использует _GnuPG_?
+   * Каковы два основных компонента криптографии с открытым ключом?
+   * `Какой KEY-ID` отпечаток  открытого ключа `07A6 5898 2D3A F3DD 43E3 DA95 1F3F 3147 FA7F 54C7`?
+   * Какой метод используется для распространения открытых ключей на глобальном уровне?
+3. Выполните следующие шаги в правильном порядке, касающиеся отзыва закрытого ключа:
+   * Сделайте отозванный ключ доступным для ваших корреспондентов.
+   * Создайте сертификат отзыва.
+   *   Импортируйте сертификат отзыва в ваш keyring.
+
+       Правильный порядок таков:
+
+       | **Шаг 1**: |   |
+       | ---------- | - |
+       | **Шаг 2**: |   |
+       | **Шаг 3**: |   |
+4. Что касается шифрования файлов, что означает `--armor` опция в команде `gpg --output encrypted-message --recipient carol --armor --encrypt unencrypted-message`?
+
+## Исследовательские упражнения <a href="#sec.110.3_02-ee" id="sec.110.3_02-ee"></a>
+
+1.  У большинства вариантов `gpg` есть как длинная, так и короткая версия. Дополните таблицу соответствующей короткой версией:
+
+    | Длинная версия | Сокращенная версия |
+    | -------------- | ------------------ |
+    | `--armor`      |                    |
+    | `--output`     |                    |
+    | `--recipient`  |                    |
+    | `--decrypt`    |                    |
+    | `--encrypt`    |                    |
+    | `--sign`       |                    |
+2. Ответьте на следующие вопросы, касающиеся экспорта ключей:
+   * Какую команду вы бы использовали для экспорта всех ваших открытых ключей в файл с именем `all.key`?
+   * Какую команду вы бы использовали для экспорта всех ваших закрытых ключей в файл с именем `all_private.key`?
+3. Какой вариант `gpg` позволяет выполнять большинство ключевых задач, связанных с управлением, предоставляя вам меню?
+4. Какая `gpg` опция позволяет вам создать подпись открытым текстом?
+
+## Краткие сведения <a href="#sec.110.3_02-su" id="sec.110.3_02-su"></a>
+
+В этом уроке мы рассмотрели _GNU Privacy Guard_ — отличный инструмент для шифрования/дешифрования и цифровой подписи/проверки файлов. Вы узнали:
+
+* как сгенерировать пару ключей.
+* как составить список ключей в вашей связке для ключей.
+* содержимое `~/.gnupg` каталога.
+* что такое `USER-ID` и `KEY-ID`.
+* как распространять открытые ключи среди ваших корреспондентов.
+* как глобально распространять открытые ключи через серверы ключей.
+* как отозвать приватные ключи.
+* как шифровать и расшифровывать файлы.
+* как подписывать и проверять файлы.
+* основы работы _GPG-Агента_.
+
+В этом уроке обсуждались следующие команды:
+
+`gpg`
+
+_OpenPGP_ инструмент шифрования и подписи.
+
+## Ответы на Упражнения с Руководством <a href="#sec.110.3_02-age" id="sec.110.3_02-age"></a>
+
+1.  Заполните таблицу, указав правильное имя файла:
+
+    | Описание                        | Имя файла           |
+    | ------------------------------- | ------------------- |
+    |  База данных доверенных хостов  | `trustdb.gpg`       |
+    | Каталог отозванных сертификатов | `opengp-revocs.d`   |
+    | Каталог закрытых ключей         | `private-keys-v1.d` |
+    | Список открытых ключей          | `pubring.kbx`       |
+2. Ответьте на следующие вопросы:
+   *   Какой тип криптографии использует _GnuPG_?
+
+       Криптография с открытым ключом или асимметричная криптография.
+   *   Каковы два основных компонента криптографии с открытым ключом?
+
+       Открытый и закрытый ключи.
+   * `Какой KEY-ID` отпечаток  открытого ключа `07A6 5898 2D3A F3DD 43E3 DA95 1F3F 3147 FA7F 54C7`?   FA7F 54C7
+   *   Какой метод используется для распространения открытых ключей на глобальном уровне?
+
+       Серверы ключей.
+3. Выполните следующие шаги в правильном порядке, касающиеся отзыва закрытого ключа:
+   * Сделайте отозванный ключ доступным для ваших корреспондентов
+   * Создание сертификата отзыва
+   *   Импортируйте сертификат отзыва в ваш keyring
+
+       Правильный порядок таков:
+
+       | **Шаг 1**: | Создание сертификата отзыва                                  |
+       | ---------- | ------------------------------------------------------------ |
+       | **Шаг 2**: | Импортируйте сертификат отзыва в ваш keyring                 |
+       | **Шаг 3**: | Сделайте отозванный ключ доступным для ваших корреспондентов |
+4.  Что касается шифрования файлов, что означает `--armor` опция в команде `gpg --output encrypted-message --recipient carol --armor --encrypt unencrypted-message`?
+
+    Он выводит защищённый от взлома ASCII-текст, что позволяет скопировать полученный зашифрованный файл в электронное письмо.
+
+## Ответы на Исследовательские упражнения <a href="#sec.110.3_02-aee" id="sec.110.3_02-aee"></a>
+
+1.  У большинства вариантов `gpg` есть как длинная, так и короткая версия. Дополните таблицу соответствующей короткой версией:
+
+    | Длинная версия | Сокращенная версия |
+    | -------------- | ------------------ |
+    | `--armor`      | `-a`               |
+    | `--output`     | `-o`               |
+    | `--recipient`  | `-r`               |
+    | `--decrypt`    | `-d`               |
+    | `--encrypt`    | `-e`               |
+    | `--sign`       | `-s`               |
+2. Ответьте на следующие вопросы, касающиеся экспорта ключей:
+   *   Какую команду вы бы использовали для экспорта всех ваших открытых ключей в файл с именем `all.key`?
+
+       `gpg --export --output all.key` или `gpg --export -o all.key`
+   *   Какую команду вы бы использовали для экспорта всех ваших закрытых ключей в файл с именем `all_private.key`?
+
+       `gpg --export-secret-keys --output all_private.key` или `gpg --export-secret-keys -o all_private.key` (`--export-secret-keys` можно заменить на `--export-secret-subkeys` с немного другим результатом — см. `man pgp` для получения дополнительной информации).
+3.  Какой вариант `gpg` позволяет выполнять большинство ключевых задач, связанных с управлением, предоставляя вам меню?
+
+    `--edit-key`
+4.  Какая `gpg` опция позволяет вам создать подпись открытым текстом?
+
+    `--clearsign`
