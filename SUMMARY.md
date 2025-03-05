@@ -202,6 +202,8 @@
           * [10.5 Процесс загрузки](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/10.-upravlenie-vremenem-vypolneniya-yadra-i-ustranenie-nepoladok-201.3/10.5-process-zagruzki.md)
           * [10.6 Информация об аппаратном обеспечении и ядре](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/10.-upravlenie-vremenem-vypolneniya-yadra-i-ustranenie-nepoladok-201.3/10.6-informaciya-ob-apparatnom-obespechenii-i-yadre.md)
           * [10.7 Управление временем выполнения ядра](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/10.-upravlenie-vremenem-vypolneniya-yadra-i-ustranenie-nepoladok-201.3/10.7-upravlenie-vremenem-vypolneniya-yadra.md)
+        * [11. Запуск системы](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/11.-zapusk-sistemy.md)
+        * [12. Настройка запуска системы  (202.1)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/12.-nastroika-zapuska-sistemy-202.1.md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
