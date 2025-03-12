@@ -205,6 +205,7 @@
         * [11. Запуск системы](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/11.-zapusk-sistemy.md)
         * [12. Настройка запуска системы  (202.1)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/12.-nastroika-zapuska-sistemy-202.1.md)
         * [13. Восстановление системы (202.2)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/13.-vosstanovlenie-sistemy-202.2.md)
+        * [14. Альтернативные загрузчики (202.3)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/14.-alternativnye-zagruzchiki-202.3.md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
