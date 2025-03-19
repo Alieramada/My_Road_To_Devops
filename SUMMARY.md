@@ -210,6 +210,8 @@
         * [16. Работа с Файловой Системой Linux (203.1)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/16.-rabota-s-failovoi-sistemoi-linux-203.1.md)
         * [17. Поддержка файловой системы Linux (203.2)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/17.-podderzhka-failovoi-sistemy-linux-203.2.md)
         * [18. Создание и настройка параметров файловой системы (203.3)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/18.-sozdanie-i-nastroika-parametrov-failovoi-sistemy-203.3.md)
+        * [19. Расширенное администрирование устройств хранения данных (204)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/19.-rasshirennoe-administrirovanie-ustroistv-khraneniya-dannykh-204.md)
+        * [20. Настройка RAID (204.1)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/20.-nastroika-raid-204.1.md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
