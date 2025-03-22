@@ -212,6 +212,7 @@
         * [18. Создание и настройка параметров файловой системы (203.3)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/18.-sozdanie-i-nastroika-parametrov-failovoi-sistemy-203.3.md)
         * [19. Расширенное администрирование устройств хранения данных (204)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/19.-rasshirennoe-administrirovanie-ustroistv-khraneniya-dannykh-204.md)
         * [20. Настройка RAID (204.1)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/20.-nastroika-raid-204.1.md)
+        * [21. Настройка доступа к устройству хранения данных (204.2)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/21.-nastroika-dostupa-k-ustroistvu-khraneniya-dannykh-204.2.md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
