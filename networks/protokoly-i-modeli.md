@@ -15,7 +15,7 @@
 * Протоколы - это правила, которым должны соответствовать коммуникации.
 * Эти правила будут варьироваться в зависимости от протокола.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
