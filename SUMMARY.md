@@ -241,5 +241,7 @@
       * [Глава 9. Работа с различными файлами](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-9.-rabota-s-razlichnymi-failami.md)
       * [Глава 10. Базовое программирование сетевых сокетов](python/knigi-po-python/napisanie-scenariev-na-python-dlya-sistemnykh-administratorov/glava-10.-bazovoe-programmirovanie-setevykh-soketov.md)
 * [GOLang](golang.md)
+* [Networks](networks/README.md)
+  * [Протоколы и Модели](networks/protokoly-i-modeli.md)
 * [Краткие инструкции для пользователей](80akigb8ap-h1aaagosgik5a-d1ao4d-80adkagqievch6b8h/README.md)
   * [Подключение к vpn](80akigb8ap-h1aaagosgik5a-d1ao4d-80adkagqievch6b8h/d1acaligpdi8ftd-j1a-vpn.md)
