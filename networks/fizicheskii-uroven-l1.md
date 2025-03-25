@@ -20,11 +20,11 @@
 * Следующее устройство на пути к месту назначения получает биты\
   и повторно инкапсулирует кадр, а затем решает, что с ним делать.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Стандарты физического уровня**
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Физические компоненты**
 
@@ -49,7 +49,7 @@
 
 На практике применяются куда более сложные методы кодирования.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Signaling
 
