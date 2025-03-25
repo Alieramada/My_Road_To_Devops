@@ -245,5 +245,6 @@
 * [Networks](networks/README.md)
   * [Протоколы и Модели](networks/protokoly-i-modeli.md)
   * [Физический уровень L1](networks/fizicheskii-uroven-l1.md)
+  * [Системы счислений](networks/sistemy-schislenii.md)
 * [Краткие инструкции для пользователей](80akigb8ap-h1aaagosgik5a-d1ao4d-80adkagqievch6b8h/README.md)
   * [Подключение к vpn](80akigb8ap-h1aaagosgik5a-d1ao4d-80adkagqievch6b8h/d1acaligpdi8ftd-j1a-vpn.md)
