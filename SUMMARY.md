@@ -217,6 +217,7 @@
         * [23. Настройка устройств PCMCIA (204.4)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/23.-nastroika-ustroistv-pcmcia-204.4.md)
         * [24. Настройка сети (205)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/24.-nastroika-seti-205.md)
         * [25. Базовая настройка сети (205.1)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/25.-bazovaya-nastroika-seti-205.1.md)
+        * [26.Расширенная настройка сети и устранение неполадок (205.2)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/26.rasshirennaya-nastroika-seti-i-ustranenie-nepoladok-205.2.md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
