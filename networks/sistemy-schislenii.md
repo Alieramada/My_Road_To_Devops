@@ -109,7 +109,7 @@
 
 ### **IPv4 Адреса**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 IPv4-адрес состоит из 32 бит, которые обычно представляются в виде четырех октетов.
 
@@ -123,7 +123,7 @@ IPv4-адрес состоит из 32 бит, которые обычно пр�
 
 ### **IPv6 Адреса**
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 IPv6 адреса имеют длину 128 бит и обычно записываются в виде восьми групп(гекстетов) по четыре шестнадцатеричных цифры, разделённых двоеточиями.&#x20;
 
