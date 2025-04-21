@@ -20,11 +20,11 @@
 * Следующее устройство на пути к месту назначения получает биты\
   и повторно инкапсулирует кадр, а затем решает, что с ним делать.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Стандарты физического уровня**
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Физические компоненты**
 
@@ -49,7 +49,7 @@
 
 На практике применяются куда более сложные методы кодирования.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Signaling
 
@@ -57,9 +57,9 @@
 \
 Способ передачи сигналов зависит от типа используемого носителя.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Электрические сигналы в медном кабеле</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Электрические сигналы в медном кабеле</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Пульсации света в оптическом кабеле</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Пульсации света в оптическом кабеле</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Радиосигналы в WiFi</p></figcaption></figure>
 
@@ -156,7 +156,7 @@ UTP состоит из четырех пар\
 
 ### **Типы оптоволоконных кабелей**
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Двуосный кабель (до 15 метров)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Двуосный кабель (до 15 метров)</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Single Mode</p></figcaption></figure>
 
