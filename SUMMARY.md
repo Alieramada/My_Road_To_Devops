@@ -221,6 +221,7 @@
         * [27. Техническое обслуживание системы (206)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/27.-tekhnicheskoe-obsluzhivanie-sistemy-206/README.md)
           * [27.1 Создание и установка программ из исходного кода](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/27.-tekhnicheskoe-obsluzhivanie-sistemy-206/27.1-sozdanie-i-ustanovka-programm-iz-iskhodnogo-koda.md)
           * [27.2 Операции резервного копирования](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/27.-tekhnicheskoe-obsluzhivanie-sistemy-206/27.2-operacii-rezervnogo-kopirovaniya.md)
+          * [27.3 Уведомление пользователей о проблемах, связанных с системой (206.3)](linux/knigi-po-linux/lpi/the-lpic2-exam-prep/27.-tekhnicheskoe-obsluzhivanie-sistemy-206/27.3-uvedomlenie-polzovatelei-o-problemakh-svyazannykh-s-sistemoi-206.3.md)
     * [Classic Shell Scripting](linux/knigi-po-linux/classic-shell-scripting/README.md)
       * [Глава 1. Background](linux/knigi-po-linux/classic-shell-scripting/glava-1.-background.md)
       * [Глава 2. Приступая к работе](linux/knigi-po-linux/classic-shell-scripting/glava-2.-pristupaya-k-rabote.md)
